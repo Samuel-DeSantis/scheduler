@@ -1,0 +1,42 @@
+<%= form_with(model: conduit) do |form| %>
+  <% if conduit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+
+      <ul>
+        <% conduit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :tag, style: "display: block" %>
+    <%= form.text_field :tag %>
+  </div>
+
+  <div>
+    <%= form.label :size, style: "display: block" %>
+    <%= form.text_field :size %>
+  </div>
+
+  <div>
+    <%= form.label :to, style: "display: block" %>
+    <%= form.text_field :to %>
+  </div>
+
+  <div>
+    <%= form.label :from, style: "display: block" %>
+    <%= form.text_field :from %>
+  </div>
+
+  <div>
+    <%= form.label :project_id, style: "display: block" %>
+    <%= form.number_field :project_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

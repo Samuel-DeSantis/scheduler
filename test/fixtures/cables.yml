@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tag: MyString
+  conduit_id: 1
+  conductors: 1
+  size: MyString
+  od: 1.5
+
+two:
+  tag: MyString
+  conduit_id: 1
+  conductors: 1
+  size: MyString
+  od: 1.5

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @conduit %>
+
+<div>
+  <%= link_to "Edit this conduit", edit_conduit_path(@conduit) %> |
+  <%= link_to "Back to conduits", conduits_path %>
+
+  <%= button_to "Destroy this conduit", @conduit, method: :delete %>
+</div>

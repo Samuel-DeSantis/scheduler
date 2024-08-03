@@ -54,3 +54,10 @@ build-iPhoneSimulator/
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
+
+/config/master.key
+./config/master.key
+
+#=> If need arises to create a new master.key...
+# EDITOR=vim rails credentials:edit
+
