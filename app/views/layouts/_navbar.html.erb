@@ -31,6 +31,10 @@
 
 <nav style='flex'>
   <%= link_to 'Scheduler', root_path, id: 'name' %>
-  <%= link_to 'Sign Up', new_user_path, id: 'sign_up' %>
+  <% if session[:username] %>
+    <%= link_to 'Sign Out', sign_out_path, id: 'sign_up' %>
+  <% else  %>
+    <%= link_to 'Sign Up', new_user_path, id: 'sign_up' %>
+  <% end %>
   <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
 </nav>

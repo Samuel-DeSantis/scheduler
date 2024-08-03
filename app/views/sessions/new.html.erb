@@ -31,6 +31,16 @@
     background-color: green;
     color: white;
   }
+  #to_sign_up {
+    top: 0;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+  }
+  #to_sign_up:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div class='form-container'>
@@ -40,8 +50,8 @@
       <%= render 'sign_in' %>
     </div>
     <div id='subsection'>
-      <p>Already have an account?</p>
-      <%= link_to "Sign In Here", '/sign_in', id: 'to_sign_in' %>
+      <p>Don't have an account?</p>
+      <%= link_to "Sign Up Here", new_user_path, id: 'to_sign_up' %>
     </div>
   </div>
 </div>

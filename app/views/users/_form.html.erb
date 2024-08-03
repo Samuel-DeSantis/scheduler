@@ -42,22 +42,22 @@
     <%= form.text_field :username, class: 'entry' %>
   </div>
   <div class='group'>
-    <%= form.label :email, style: "display: block" %>
+    <%= form.label :email %>
     <%= form.text_field :email, class: 'entry' %>
   </div>
   <div class='group'>
-    <%= form.label :first_name, style: "display: block" %>
+    <%= form.label :first_name %>
     <%= form.text_field :first_name, class: 'entry' %>
   </div>
   <div class='group'>
-    <%= form.label :last_name, style: "display: block" %>
+    <%= form.label :last_name %>
     <%= form.text_field :last_name, class: 'entry' %>
   </div>
   <div class='group'>
-    <%= form.label 'Password', style: "display: block" %>
-    <%= form.password_field :password_digest, class: 'entry' %>
+    <%= form.label 'Password' %>
+    <%= form.password_field :password, class: 'entry' %>
   </div>
   <div>
-    <%= form.submit class: 'submit' %>
+    <%= form.submit 'Sign Up', class: 'submit' %>
   </div>
 <% end %>

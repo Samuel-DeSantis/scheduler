@@ -2,6 +2,7 @@
 
   #header {
     text-align: center;
+    font-size: 2.5rem;
   }
   #subsection {
     display: block;
@@ -34,16 +35,14 @@
   }
 </style>
 
-<div>
-  <%= form_tag sign_in_path do %>
-    <div class='group'>
-      <label>Username</label>
-      <%= text_field_tag :username %>
-    </div>
-    <div class='group'>
-      <label>Password</label>
-      <%= text_field_tag :password %>
-    </div>
-    <%= submit_tag 'Sign In' %>
-  <% end %>
-</div>
+<%= form_with url: sign_in_path do |form| %>
+  <div class='group'>
+    <%= form.label :username %>
+    <%= form.text_field :username, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :password %>
+    <%= form.password_field :password, class: 'entry' %>
+  </div>
+  <%= submit_tag 'Sign In', class: 'submit' %>
+<% end %>
