@@ -3745,3 +3745,3025 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3707)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:33:25 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 54.7ms | Allocations: 2401)
+  Rendered users/new.html.erb within layouts/application (Duration: 56.9ms | Allocations: 2766)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 5038)
+Completed 200 OK in 79ms (Views: 76.3ms | ActiveRecord: 0.0ms | Allocations: 6141)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 21:33:48 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1972)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2807)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:33:50 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.5ms | Allocations: 1693)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1778)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3372)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3713)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:34:43 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.9ms | Allocations: 2378)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2743)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 5015)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 6115)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:36:35 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1200)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3490)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.5ms | Allocations: 4611)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:37:24 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 2404)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2766)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 5038)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 6139)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:37:56 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 2394)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2768)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 5040)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 6141)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:37:57 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1021)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2628)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 3039)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:38:09 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 2384)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5029)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 6129)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:38:17 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 2384)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 2757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 5030)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 6132)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:38:35 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1009)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2616)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 3027)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:38:57 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 2384)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2757)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 5029)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 6136)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:38:58 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 997)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2604)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 3015)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:39:59 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2392)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 2792)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 5071)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 6171)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:40:09 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.5ms | Allocations: 2392)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2794)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 5066)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 6167)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:40:10 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.8ms | Allocations: 1687)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1783)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3377)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3715)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:40:44 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 2380)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 2785)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 5057)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 6157)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:41:13 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 2388)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2793)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 5065)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 6166)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:41:20 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 2382)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2787)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 5059)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 6160)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:42:15 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 2388)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 2793)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 5066)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 6167)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:42:35 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2374)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 2779)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5051)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 6152)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:42:40 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2388)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2792)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 5064)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 6165)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:42:47 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.7ms | Allocations: 2396)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2801)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 5073)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 6174)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:43:38 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1012)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2619)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 3030)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:43:44 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 2382)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2786)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5070)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 6171)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:43:49 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 2386)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2790)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5062)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 6166)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:44:02 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2386)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 2791)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 5063)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 6164)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:03 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1002)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2609)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 3020)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:44:18 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.4ms | Allocations: 2390)
+  Rendered users/new.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2798)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 5070)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 6170)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:19 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1002)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2609)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 3020)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:19 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 759)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2366)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 2699)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:21 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 765)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2372)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 2705)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:22 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 761)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2368)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 2701)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:23 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 753)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2360)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 2693)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:44:28 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 2386)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2794)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5066)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 6169)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:29 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1016)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2623)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 3034)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:30 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2370)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 2703)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:44:55 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.0ms | Allocations: 2384)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2801)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 5073)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 6173)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:56 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1000)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2607)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 3018)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:44:57 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 775)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2382)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 2715)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:45:10 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 767)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2374)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 2707)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 21:45:12 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.8ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 1968)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:45:15 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.5ms | Allocations: 1691)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1787)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3381)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3721)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:45:35 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 2390)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2806)
+  Rendered layouts/_navbar.html.erb (Duration: 7.2ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 5079)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 6179)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:46:32 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 2400)
+  Rendered users/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2855)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 5127)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 6228)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:46:38 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.5ms | Allocations: 2402)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2819)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5091)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 6193)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:47:19 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 2390)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 2821)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 5093)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.0ms | Allocations: 6197)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:47:45 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.1ms | Allocations: 2382)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2813)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 5085)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 6186)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:47:47 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.1ms | Allocations: 1687)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1784)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3385)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3723)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:48:23 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 2384)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2811)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 5083)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 6183)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:48:27 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.7ms | Allocations: 2378)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2804)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 5076)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 6177)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:48:56 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1044)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3334)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 4455)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:48:57 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 763)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2370)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 2704)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:49:22 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.2ms | Allocations: 2380)
+  Rendered users/new.html.erb within layouts/application (Duration: 19.0ms | Allocations: 2818)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 5090)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 6190)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:49:24 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1016)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2623)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 3034)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:49:25 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 769)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2376)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 2709)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:49:52 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.6ms | Allocations: 2386)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2826)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5098)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 6198)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:49:58 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.8ms | Allocations: 2394)
+  Rendered users/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2834)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5106)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 6207)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 21:50:48 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 2386)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2822)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 5094)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 6195)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:50:49 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1012)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2619)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 3030)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:50:50 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 753)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2360)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 2694)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 21:50:50 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 755)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2369)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 2703)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 21:50:52 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.8ms | Allocations: 106)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1969)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-08-02 22:07:32 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:07:43 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:07:46 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:07:50 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 389)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 19641)
+Completed 200 OK in 50ms (Views: 46.9ms | ActiveRecord: 0.0ms | Allocations: 20709)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:07:51 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1772)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2092)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:07:52 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.7ms | Allocations: 2435)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2873)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4545)
+Completed 200 OK in 23ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 10615)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:07:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:10:15 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.0ms | Allocations: 2421)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2857)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 359)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 22178)
+Completed 200 OK in 69ms (Views: 57.6ms | ActiveRecord: 1.1ms | Allocations: 28920)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:10:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:11:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:11:35 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:11:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:11:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:14:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:14:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:14:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:14:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:15:15 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-08-02 22:15:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:15:40 -0600
+Processing by SessionsController#new as HTML
+Completed 406 Not Acceptable in 13ms (ActiveRecord: 1.0ms | Allocations: 6403)
+
+
+  
+ActionController::MissingExactTemplate (SessionsController#new is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.4) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.6) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.6) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:15:59 -0600
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for SessionsController):
+  
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.8.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:14 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.0ms | Allocations: 7531)
+
+
+  
+NameError (undefined local variable or method `login_path' for #<SessionsController:0x00000000066f08>):
+  
+app/controllers/sessions_controller.rb:11:in `sign_in'
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms | Allocations: 4715)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 952)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:30 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:31 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 931)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 935)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 959)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:38 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:16:39 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 107)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 19666)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.0ms | Allocations: 20733)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:44 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:44 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:44 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 961)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:44 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:45 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:46 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 931)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:47 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 935)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:16:52 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:16:55 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 1803)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2121)
+
+
+Started GET "/routes" for 127.0.0.1 at 2024-08-02 22:17:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms | Allocations: 4754)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 942)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 957)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 940)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 931)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:32 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:33 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 933)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 925)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 925)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 935)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 943)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 929)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 939)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 949)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 937)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 947)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 955)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 951)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 945)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 953)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:17:34 -0600
+Processing by SessionsController#sign_in as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:9:in `sign_in'
+Redirected to http://127.0.0.1:3000/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:17:36 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 18956)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.0ms | Allocations: 19699)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:18:47 -0600
+Processing by SessionsController#new as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 546)
+
+
+  
+ActionController::MissingExactTemplate (SessionsController#new is missing a template for request formats: text/html):
+  
+actionpack (7.0.8.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.8.4) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+turbo-rails (2.0.6) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.6) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:19:04 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1203)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2261)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_tag sign_in_path %>
+  <label>Username</label>
+  <%= text_field_tag :username %>
+  <label>Password</label>
+  <%= text_field_tag :password %>
+<% end %>
+):
+1:    <%= form_tag sign_in_path %>
+2:      <label>Username</label>
+3:      <%= text_field_tag :username %>
+4:      <label>Password</label>
+5:      <%= text_field_tag :password %>
+6:    <% end %>
+  
+app/views/sessions/new.html.erb:8: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:8: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:8: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:19:40 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1150)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1223)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2273)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_tag sign_in_path %>
+  <label>Username</label>
+  <%= text_field_tag :username %>
+  <label>Password</label>
+  <%= text_field_tag :password %>
+  <%= submit_tag 'Sign In' %>
+<% end %>
+):
+1:    <%= form_tag sign_in_path %>
+2:      <label>Username</label>
+3:      <%= text_field_tag :username %>
+4:      <label>Password</label>
+5:      <%= text_field_tag :password %>
+6:      <%= submit_tag 'Sign In' %>
+7:    <% end %>
+  
+app/views/sessions/new.html.erb:9: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected `end', expecting end-of-input
+app/views/sessions/new.html.erb:9: syntax error, unexpected `end', expecting end-of-input
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:20:02 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 733)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 364)
+  Rendered layout layouts/application.html.erb (Duration: 62.4ms | Allocations: 20067)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 21150)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:20:57 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 324)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 2809)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 3892)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:21:13 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 65)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 1855)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 2174)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:21:22 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 24.2ms | Allocations: 2714)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 2786)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 3837)
+
+
+  
+ActionView::Template::Error (Missing partial sessions/__sign_in, application/__sign_in with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/mnt/c/Users/samue/dev/projects/Ruby/scheduler/app/views"
+  * "/home/sdesantis/.rvm/gems/ruby-3.0.0/gems/turbo-rails-2.0.6/app/views"
+  * "/home/sdesantis/.rvm/gems/ruby-3.0.0/gems/actiontext-7.0.8.4/app/views"
+  * "/home/sdesantis/.rvm/gems/ruby-3.0.0/gems/actionmailbox-7.0.8.4/app/views"
+
+Did you mean?  sessions/sign_in
+               users/user
+               action_text/contents/content
+               action_text/attachables/missing_attachable
+               layouts/action_text/contents/content
+               users/form):
+    1: <%= render '_sign_in' %>
+  
+app/views/sessions/new.html.erb:1
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:21:27 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.6ms | Allocations: 101)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 323)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2821)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3904)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:21:28 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.8ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1983)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 2845)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:21:35 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 65)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1869)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2189)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:22:12 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 65)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 1867)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 2185)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:22:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.8ms | Allocations: 107)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 611)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 487.6ms | Allocations: 54612)
+Completed 200 OK in 590ms (Views: 508.6ms | ActiveRecord: 0.0ms | Allocations: 60851)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:22:23 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 14.2ms | Allocations: 3704)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 4148)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5821)
+Completed 200 OK in 58ms (Views: 24.6ms | ActiveRecord: 1.1ms | Allocations: 27889)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:22:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:23:12 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.6ms | Allocations: 2436)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2872)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 22265)
+Completed 200 OK in 67ms (Views: 53.7ms | ActiveRecord: 1.8ms | Allocations: 29046)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:23:14 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.4ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2025)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 2890)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:23:15 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.1ms | Allocations: 1712)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1808)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3402)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3746)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:23:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:24:05 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.5ms | Allocations: 1811)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1919)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 20639)
+Completed 200 OK in 56ms (Views: 44.1ms | ActiveRecord: 1.5ms | Allocations: 27096)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:24:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:24:55 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 8.0ms | Allocations: 4535)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 23462)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 24192)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<ActionView::Base:0x000000000261d8>
+Did you mean?  new_project_path):
+    31: 
+    32: <nav style='flex'>
+    33:   <%= link_to 'Scheduler', root_path, id: 'name' %>
+    34:   <%= link_to 'Sign Up', new_user_path, id: 'sign_up' %>
+    35:   <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
+    36: </nav>
+  
+app/views/layouts/_navbar.html.erb:34
+app/views/layouts/application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:25:36 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.8ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 7.5ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2598)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 3681)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:25:37 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.7ms | Allocations: 101)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 322)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2204)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 3066)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:25:39 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1820)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2142)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:25:47 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 0.5ms | Allocations: 101)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 323)
+  Rendered layouts/_navbar.html.erb (Duration: 7.3ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2812)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 3896)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:25:47 -0600
+  
+ActionController::RoutingError (uninitialized constant UserController
+Did you mean?  UsersController):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:25:48 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 1997)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 2834)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:25:54 -0600
+  
+ActionController::RoutingError (uninitialized constant UserController
+Did you mean?  UsersController):
+  
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:31:02 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.0ms | Allocations: 4099)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4489)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4561)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms | Allocations: 11367)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000002cc18>):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= form_with(model: user) do |form| %>
+    30:   <% if user.errors.any? %>
+    31:     <div style="color: red">
+    32:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:29
+app/views/users/new.html.erb:32
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:31:35 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.1ms | Allocations: 4116)
+  Rendered users/new.html.erb within layouts/application (Duration: 19.7ms | Allocations: 4506)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4578)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 5646)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000002cf88>):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= form_with(model: user) do |form| %>
+    30:   <% if user.errors.any? %>
+    31:     <div style="color: red">
+    32:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:29
+app/views/users/new.html.erb:32
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:32:01 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 19654)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms | Allocations: 20514)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:32:02 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.0ms | Allocations: 3481)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3539)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3610)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3916)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000002d398>):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= form_with(model: user) do |form| %>
+    30:   <% if user.errors.any? %>
+    31:     <div style="color: red">
+    32:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  
+app/views/users/_form.html.erb:29
+app/views/users/new.html.erb:32
+Started GET "/sign_up" for 127.0.0.1 at 2024-08-02 22:32:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:32:45 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 8.0ms | Allocations: 4466)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 23314)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 24034)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sign_up_path' for #<ActionView::Base:0x00000000033838>
+Did you mean?  sign_out_path
+               sign_in_path):
+    31: 
+    32: <nav style='flex'>
+    33:   <%= link_to 'Scheduler', root_path, id: 'name' %>
+    34:   <%= link_to 'Sign Up', sign_up_path, id: 'sign_up' %>
+    35:   <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
+    36: </nav>
+  
+app/views/layouts/_navbar.html.erb:34
+app/views/layouts/application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:33:02 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 6.9ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 2589)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 3671)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:33:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:33:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:33:26 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.6ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 6.7ms | Allocations: 1694)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3901)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"users"}, missing required keys: [:id]):
+    31: 
+    32: <nav style='flex'>
+    33:   <%= link_to 'Scheduler', root_path, id: 'name' %>
+    34:   <%= link_to 'Sign Up', user_path, id: 'sign_up' %>
+    35:   <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
+    36: </nav>
+  
+app/views/layouts/_navbar.html.erb:34
+app/views/layouts/application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:34:01 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2591)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3674)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:34:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:35:11 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:35:13 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2583)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 3620)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:35:14 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 2450)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 4024)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4096)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.3ms | Allocations: 10633)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"users"}, missing required keys: [:id]):
+    33:     </div>
+    34:     <div id='subsection'>
+    35:       <p>Already have an account?</p>
+    36:       <%= link_to "Sign In Here", user_path, id: 'to_sign_in' %>
+    37:     </div>
+    38:   </div>
+    39: </div>
+  
+app/views/users/new.html.erb:36
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:35:51 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 2414)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2850)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 5127)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 6228)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:35:52 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.8ms | Allocations: 101)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 1996)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 2833)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:35:53 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.9ms | Allocations: 1705)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1801)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3395)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3736)
+
+
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:35:56 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:35:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2024-08-02 22:36:40 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2024-08-02 22:36:50 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 102)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2592)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3629)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2024-08-02 22:36:51 -0600
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 2408)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2833)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4501)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 5356)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-02 22:36:53 -0600
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/_sign_in.html.erb (Duration: 2.3ms | Allocations: 736)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 957)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2624)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 3486)
+
+

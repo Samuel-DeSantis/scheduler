@@ -7,9 +7,19 @@ Rails.application.routes.draw do
 
 
   resources :cables
-  resources :conduits
+  resources :conduits do
+    resources :cables
+  end
   resources :projects
-  resources :users
+  resources :users, only: [:new, :create, :destroy]
+
+  # get '/sign_up', to: 'users#new'
+  # get '/sign_up', to: 'users#create'
+
+  get '/sign_in', to: 'sessions#new'
+  post '/sign_in', to: 'sessions#create'
+  get '/sign_out', to: 'sessions#destroy'
+  post '/sign_out', to: 'sessions#destroy'
 
   root "home#welcome"
 
