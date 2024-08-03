@@ -1,3 +1,24 @@
+<style type='text/css'>
+  #new-conduit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  #new-conduit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
 <p style="color: green"><%= notice %></p>
 
 <h1>Conduits</h1>
@@ -11,4 +32,4 @@
   <% end %>
 </div>
 
-<%= link_to "New conduit", new_conduit_path %>
+<%= link_to "New conduit", new_conduit_path, id: 'new-conduit' %>

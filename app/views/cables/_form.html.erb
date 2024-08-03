@@ -1,3 +1,31 @@
+<style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
 <%= form_with(model: cable) do |form| %>
   <% if cable.errors.any? %>
     <div style="color: red">
@@ -10,33 +38,27 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :tag, style: "display: block" %>
-    <%= form.text_field :tag %>
+  <div class='group'>
+    <%= form.label :tag %>
+    <%= form.text_field :tag, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :conduit_id, style: "display: block" %>
-    <%= form.number_field :conduit_id %>
+  <div class='group'>
+    <%= form.label :conduit_id %>
+    <%= form.number_field :conduit_id, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :conductors, style: "display: block" %>
-    <%= form.number_field :conductors %>
+  <div class='group'>
+    <%= form.label :conductors %>
+    <%= form.number_field :conductors, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :size, style: "display: block" %>
-    <%= form.text_field :size %>
+  <div class='group'>
+    <%= form.label :size %>
+    <%= form.text_field :size, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :od, style: "display: block" %>
-    <%= form.text_field :od %>
+  <div class='group'>
+    <%= form.label 'OD' %>
+    <%= form.text_field :od, class: 'entry' %>
   </div>
-
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'submit' %>
   </div>
 <% end %>

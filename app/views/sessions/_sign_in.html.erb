@@ -1,7 +1,49 @@
-<%= form_tag sign_in_path do %>
-  <label>Username</label>
-  <%= text_field_tag :username %>
-  <label>Password</label>
-  <%= text_field_tag :password %>
-  <%= submit_tag 'Sign In' %>
-<% end %>
+<style type='text/css'>
+
+  #header {
+    text-align: center;
+  }
+  #subsection {
+    display: block;
+    text-align: center;
+  }
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
+<div>
+  <%= form_tag sign_in_path do %>
+    <div class='group'>
+      <label>Username</label>
+      <%= text_field_tag :username %>
+    </div>
+    <div class='group'>
+      <label>Password</label>
+      <%= text_field_tag :password %>
+    </div>
+    <%= submit_tag 'Sign In' %>
+  <% end %>
+</div>

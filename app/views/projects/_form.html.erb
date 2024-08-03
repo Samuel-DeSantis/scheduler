@@ -1,3 +1,31 @@
+<style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
 <%= form_with(model: project) do |form| %>
   <% if project.errors.any? %>
     <div style="color: red">
@@ -11,12 +39,12 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class='group'>
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'entry' %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'submit' %>
   </div>
 <% end %>

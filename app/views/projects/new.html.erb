@@ -1,8 +1,24 @@
-<h1>New project</h1>
+<style>
+  .form-container {
+    display: flex;
+    justify-content: left;
+  }
+  .form {
+    padding-bottom: 2rem;
+  }
+  #header {
+    text-align: center;
+  }
+</style>
 
-<%= render "form", project: @project %>
-
-<br>
+<div class='form-container'>
+  <div>
+    <h1 id='header'>New Project</h1>
+    <div class='form'>
+      <%= render "form", project: @project %>
+    </div>
+  </div>
+</div>
 
 <div>
   <%= link_to "Back to projects", projects_path %>
