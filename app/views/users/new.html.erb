@@ -1,6 +1,20 @@
-<h1>New user</h1>
+<style>
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  #header {
+    text-align: center;
+  }
+</style>
 
-<%= render "form", user: @user %>
+
+<div class='form'>
+  <div>
+    <h1 id='header'>Sign Up</h1>
+    <%= render "form", user: @user %>
+  </div>
+</div>
 
 <br>
 

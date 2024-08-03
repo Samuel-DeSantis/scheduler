@@ -1,0 +1,36 @@
+<style type='text/css'>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  #name {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+  }
+  #sign_up {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border: solid black 1px;
+    border-radius: 0.25rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  #sign_up:hover {
+    background-color: black;
+    color: white;
+  }
+</style>
+
+<nav style='flex'>
+  <%= link_to 'Scheduler', root_path, id: 'name' %>
+  <%= link_to 'Sign Up', new_user_path, id: 'sign_up' %>
+  <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
+</nav>

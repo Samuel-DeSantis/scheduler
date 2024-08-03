@@ -61,3 +61,6 @@ build-iPhoneSimulator/
 #=> If need arises to create a new master.key...
 # EDITOR=vim rails credentials:edit
 
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

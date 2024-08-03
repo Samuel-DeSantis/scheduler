@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_08_03_010157) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_03_031553) do
   create_table "cables", force: :cascade do |t|
     t.string "tag"
     t.integer "conduit_id"
@@ -50,9 +50,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_03_010157) do
     t.string "last_name"
     t.string "password_digest"
     t.string "email"
-    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
   end
 
 end

@@ -1,8 +1,34 @@
+<style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    background-color: green;
+    color: white;
+  }
+</style>
+
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
       <ul>
         <% user.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,38 +36,27 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :username, style: "display: block" %>
-    <%= form.text_field :username %>
+  <div class='group'>
+    <%= form.label :username %>
+    <%= form.text_field :username, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
-  </div>
-
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
-
-  <div>
-    <%= form.label :password_digest, style: "display: block" %>
-    <%= form.text_field :password_digest %>
-  </div>
-
-  <div>
+  <div class='group'>
     <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class: 'entry' %>
   </div>
-
-  <div>
-    <%= form.label :admin, style: "display: block" %>
-    <%= form.check_box :admin %>
+  <div class='group'>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, class: 'entry' %>
   </div>
-
+  <div class='group'>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label 'Password', style: "display: block" %>
+    <%= form.password_field :password_digest, class: 'entry' %>
+  </div>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: 'submit' %>
   </div>
 <% end %>
