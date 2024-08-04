@@ -6,9 +6,7 @@ class SessionsController < ApplicationController
     if !!@user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
       session[:username] = @user.username
-      # session[:user] = [@user.id, @user.username]
-      # flash[:notice] = 'Successful Sign In'
-      redirect_to user_path(@user), notice: 'Successful Sign In'
+      redirect_to projects_path
     else
       redirect_to sign_in_path, notice: '(!) Invalid Sign In'
     end

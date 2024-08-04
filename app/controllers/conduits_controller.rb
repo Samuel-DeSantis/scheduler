@@ -1,5 +1,6 @@
 class ConduitsController < ApplicationController
   before_action :set_conduit, only: %i[ show edit update destroy ]
+  before_action :require_login
 
   # GET /conduits or /conduits.json
   def index

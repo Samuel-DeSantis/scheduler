@@ -1,5 +1,6 @@
 class CablesController < ApplicationController
   before_action :set_cable, only: %i[ show edit update destroy ]
+  before_action :require_login
 
   # GET /cables or /cables.json
   def index
