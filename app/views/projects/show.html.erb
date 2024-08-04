@@ -1,10 +1,113 @@
+<style>
+  #header {
+    display: flex;
+    align-items: center;
+  }
+  #edit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    font-size: 0.75rem;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    color: green;
+    background-color: white;
+    text-decoration: none;
+  }
+  #edit:hover {
+    background-color: green;
+    color: white;
+  }
+  #delete {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 0.75rem;
+    border: solid red 1px;
+    border-radius: 0.25rem;
+    color: red;
+    background-color: white;
+    text-decoration: none;
+  }
+  #delete:hover {
+    background-color: red;
+    color: white;
+  }
+  .update {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 0.75rem;
+    border: solid blue 1px;
+    border-radius: 0.25rem;
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+  .update:hover {
+    background-color: blue;
+    color: white;
+  }
+  table {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  th, td {
+    padding: 0.5rem;
+  }
+  .cable-count {
+    text-align: center;
+  }
+  #back {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+  }
+  #back:hover {
+    text-decoration: underline;
+  }
+</style>
+
 <p style="color: green"><%= notice %></p>
-
-<%= render @project %>
-
-<div>
-  <%= link_to "Edit this project", edit_project_path(@project) %> |
-  <%= link_to "Back to projects", projects_path %>
-
-  <%= button_to "Destroy this project", @project, method: :delete %>
+<div id='header'>
+  <h1><%= @project.name %></h1>
+  <%= link_to "Edit", edit_project_path(@project), id: 'edit' %>
+  <%= button_to "Delete", @project, method: :delete, id: 'delete' %>
 </div>
+<% if @project.conduits == [] %>
+  <p>There aren't any conduits yet!</p>
+<% else %>
+  <table>
+    <thead>
+      <th>Tag</th>
+      <th>Size</th>
+      <th>To</th>
+      <th>From</th>
+      <th>No. of Cables</th>
+    </thead>
+    <tbody>
+      <% @project.conduits.each do |conduit| %>
+        <tr id=<%= "row#{conduit.id}" %>>
+          <th><%= conduit.tag %></th>
+          <td><%= conduit.size %></td>
+          <td><%= conduit.to %></td>
+          <td><%= conduit.from %></td>
+          <td class='cable-count'><%= conduit.cables.count %></td>
+          <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+<%= link_to "> Back to projects", projects_path, id: 'back' %>

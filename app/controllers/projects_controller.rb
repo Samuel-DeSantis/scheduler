@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects or /projects.json
   def index
-    @projects = Project.all
+    @projects = User.find_by_id(session[:user_id]).projects
   end
 
   # GET /projects/1 or /projects/1.json
@@ -18,6 +18,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+
   end
 
   # POST /projects or /projects.json
@@ -26,6 +27,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
+        UserProject.create(user_id: session[:user_id], project_id: @project.id)
         format.html { redirect_to project_url(@project), notice: "Project was successfully created." }
         format.json { render :show, status: :created, location: @project }
       else
