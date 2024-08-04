@@ -15,6 +15,11 @@
     display: block;
     padding: 0.25rem;
   }
+  #notice {
+    color: red;
+    font-style: italic;
+    font-size: 0.75rem;
+  }
   .submit {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -43,6 +48,8 @@
   <div class='group'>
     <%= form.label :password %>
     <%= form.password_field :password, class: 'entry' %>
+    <p id='notice'><%= notice %></p>
+
   </div>
   <%= submit_tag 'Sign In', class: 'submit' %>
 <% end %>

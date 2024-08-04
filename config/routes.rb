@@ -11,12 +11,12 @@ Rails.application.routes.draw do
     resources :cables
   end
   resources :projects
-  resources :users #, only: [:new, :create, :destroy]
+  resources :users, only: [ :create, :destroy]
 
-  # get '/sign_up', to: 'users#new'
+  get '/sign_up', to: 'users#sign_up'
   # get '/sign_up', to: 'users#create'
 
-  get '/sign_in', to: 'sessions#new'
+  get '/sign_in', to: 'sessions#sign_in'
   post '/sign_in', to: 'sessions#create'
   get '/sign_out', to: 'sessions#destroy'
   post '/sign_out', to: 'sessions#destroy'

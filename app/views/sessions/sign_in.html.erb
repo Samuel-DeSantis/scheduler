@@ -1,0 +1,32 @@
+<style type='text/css'>
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    padding-bottom: 2rem;
+  }
+  #to_sign_up {
+    top: 0;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+  }
+  #to_sign_up:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class='form-container'>
+  <div>
+    <h1 id='header'>Sign In</h1>
+    <div class='form'>
+      <%= render 'form' %>
+    </div>
+    <div id='subsection'>
+      <p>Don't have an account?</p>
+      <%= link_to "Sign Up Here", sign_up_path, id: 'to_sign_up' %>
+    </div>
+  </div>
+</div>
