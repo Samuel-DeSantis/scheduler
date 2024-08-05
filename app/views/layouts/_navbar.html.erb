@@ -27,12 +27,25 @@
     background-color: black;
     color: white;
   }
+  .links {
+    margin-right: 0.5rem;
+    color: black;
+    text-decoration: none;
+  }
+  .links:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <nav style='flex'>
   <%= link_to 'Scheduler', root_path, id: 'name' %>
   <% if session[:username] %>
-    <%= link_to 'Sign Out', sign_out_path, id: 'sign_in_out' %>
+    <div>
+      <%= link_to 'User', user_path(session[:user_id]), class: 'links' %>
+      <%= link_to 'Projects', projects_path, class: 'links' %>
+      <%= link_to 'Sign Out', sign_out_path, id: 'sign_in_out' %>
+    </div>
+
   <% else  %>
     <%= link_to 'Sign In', '/sign_in', id: 'sign_in_out' %>
   <% end %>
