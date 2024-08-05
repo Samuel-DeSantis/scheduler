@@ -1,3 +1,4 @@
+<h1><u>User Profile</u></h1>
 <div id="<%= dom_id user %>">
   <p>
     <strong>Username:</strong>
@@ -19,8 +20,10 @@
     <strong>Email:</strong>
     <%= user.email %>
   </p>
-  <p>
-    <strong>Admin:</strong>
-    <%= user.admin %>
-  </p>
+  <% if user.admin %>
+    <p>
+      <strong>Admin:</strong>
+      <%= user.admin %>
+    </p>
+  <% end %>
 </div>

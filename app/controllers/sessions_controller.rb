@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
 
-
   def create
     @user = User.find_by_username(params[:username])
     if !!@user && @user.authenticate(params[:password])
@@ -12,9 +11,9 @@ class SessionsController < ApplicationController
     end
   end
 
-    def destroy
-      reset_session
-      redirect_to root_path
-    end
+  def destroy
+    reset_session
+    redirect_to root_path
+  end
 
 end

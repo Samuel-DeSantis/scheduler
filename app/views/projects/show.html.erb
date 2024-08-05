@@ -13,14 +13,14 @@
     margin-right: 0.5rem;
 
     font-size: 0.75rem;
-    border: solid green 1px;
+    border: solid blue 1px;
     border-radius: 0.25rem;
-    color: green;
+    color: blue;
     background-color: white;
     text-decoration: none;
   }
   #edit:hover {
-    background-color: green;
+    background-color: blue;
     color: white;
   }
   #delete {
@@ -55,6 +55,23 @@
   }
   .update:hover {
     background-color: blue;
+    color: white;
+  }
+  .create {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 0.75rem;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    color: green;
+    background-color: white;
+    text-decoration: none;
+  }
+  .create:hover {
+    background-color: green;
     color: white;
   }
   table {
@@ -110,4 +127,6 @@
     </tbody>
   </table>
 <% end %>
+
+<%= link_to 'Create a New Conduit', new_project_conduit_path(@project), class: 'create' %>
 <%= link_to "> Back to projects", projects_path, id: 'back' %>

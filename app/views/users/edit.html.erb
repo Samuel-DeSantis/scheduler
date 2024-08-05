@@ -1,10 +1,76 @@
+<style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .update {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 0.75rem;
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .update:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+  #back {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+  }
+  #back:hover {
+    text-decoration: underline;
+  }
+</style>
+
 <h1>Editing user</h1>
 
-<%= render "form", user: @user %>
-
-<br>
-
-<div>
-  <%= link_to "Show this user", @user %> |
-  <%= link_to "Back to users", users_path %>
-</div>
+<%= form_with(model: @user) do |form| %>
+  <% if @user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='group'>
+    <%= form.label :username %>
+    <%= form.text_field :username, disabled: true, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :email %>
+    <%= form.text_field :email, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label 'Password' %>
+    <%= form.password_field :password, class: 'entry' %>
+  </div>
+  <div>
+    <%= form.submit 'Update', class: 'update' %>
+  </div>
+<% end %>
+<br/>
+<%= link_to "> Back", @user, id: 'back' %>

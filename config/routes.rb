@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   resources :conduits do
     resources :cables
   end
-  resources :projects
+  resources :projects do
+    resources :conduits
+  end
   resources :users, only: [:show, :edit, :create, :destroy]
 
   get '/sign_up', to: 'users#sign_up'

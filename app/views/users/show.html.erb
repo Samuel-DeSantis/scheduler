@@ -1,10 +1,27 @@
+<style>
+  .update {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 0.75rem;
+    border: solid blue 1px;
+    border-radius: 0.25rem;
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+  }
+  .update:hover {
+    background-color: blue;
+    color: white;
+  }
+</style>
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @user %>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
+<%= link_to "Update", edit_user_path(@user), class: 'update' %>
 
-  <%= button_to "Destroy this user", @user, method: :delete %>
-</div>
+<%# <%= button_to "Destroy this user", @user, method: :delete %>
