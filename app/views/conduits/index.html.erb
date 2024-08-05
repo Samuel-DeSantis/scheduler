@@ -1,4 +1,32 @@
 <style type='text/css'>
+  table {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  th, td {
+    padding: 0.5rem;
+  }
+  .update {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    font-size: 1rem;
+    text-align: right;
+    border: solid blue 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+  }
+  .update:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
   #new-conduit {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -24,12 +52,33 @@
 <h1>Conduits</h1>
 
 <div id="conduits">
-  <% @conduits.each do |conduit| %>
-    <%= render conduit %>
-    <p>
+  <%# <% @conduits.each do |conduit| %>
+    <%# <%= render conduit %>
+    <table>
+      <thead>
+        <th>Tag</th>
+        <th>Size</th>
+        <th>To</th>
+        <th>From</th>
+        <th>Project</th>
+      </thead>
+      <tbody>
+        <% @conduits.each do |cable| %>
+          <tr id=<%= "row#{cable.id}" %>>
+            <th><%= cable.tag %></th>
+            <td><%= cable.size %></td>
+            <td><%= cable.to %></td>
+            <td><%= cable.from %></td>
+            <td><%= cable.project.name %></td>
+            <td class='cable-count'><%= link_to 'Update', edit_conduit_path(cable), class: 'update' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <%# <p>
       <%= link_to "Show this conduit", conduit %>
-    </p>
-  <% end %>
+    <%# </p> %>
+  <%# <% end %>
 </div>
 
 <%= link_to "New conduit", new_conduit_path, id: 'new-conduit' %>

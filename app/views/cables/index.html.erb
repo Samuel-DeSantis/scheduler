@@ -1,4 +1,34 @@
 <style type='text/css'>
+  table {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  th, td {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .update {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid blue 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+  }
+  .update:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
   #new-cable {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -24,12 +54,27 @@
 <h1>Cables</h1>
 
 <div id="cables">
-  <% @cables.each do |cable| %>
-    <%= render cable %>
-    <p>
-      <%= link_to "Show this cable", cable %>
-    </p>
-  <% end %>
+  <table>
+    <thead>
+      <th>Tag</th>
+      <th>Conduit</th>
+      <th>Conductors</th>
+      <th>Size</th>
+      <th>OD</th>
+    </thead>
+    <tbody>
+      <% @cables.each do |cable| %>
+        <tr id=<%= "row#{cable.id}" %>>
+          <th><%= cable.tag %></th>
+          <td><%= cable.conduit.tag %></td>
+          <td><%= cable.conductors %></td>
+          <td><%= cable.size %></td>
+          <td><%= cable.od %>"</td>
+          <td class='cable-count'><%= link_to 'Update', edit_conduit_path(cable), class: 'update' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
 <%= link_to "New cable", new_cable_path, id: 'new-cable' %>

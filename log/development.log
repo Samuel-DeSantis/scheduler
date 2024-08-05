@@ -33706,3 +33706,996 @@ Processing by CablesController#show as HTML
 Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 4005)
 
 
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:08:07 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:37
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  Rendered cables/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 8198)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 8270)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.0ms | Allocations: 9540)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cable' for #<ActionView::Base:0x000000000b60d0>
+Did you mean?  @cables
+               caller):
+    47:   </table>
+    48:     <%# <%= render cable %>
+    49:     <p>
+    50:       <%= link_to "Show this cable", cable %>
+    51:     </p>
+    52:   <%# <% end %> %>
+    53: </div>
+  
+app/views/cables/index.html.erb:50
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:08:18 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.3ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:37
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  Rendered cables/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 3348)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 6191)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 0.5ms | Allocations: 7487)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:09:07 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:37
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:40
+  Rendered cables/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 2496)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 5333)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.4ms | Allocations: 6618)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:09:40 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 2521)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 5359)
+Completed 200 OK in 49ms (Views: 42.2ms | ActiveRecord: 0.6ms | Allocations: 6640)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:03 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.5ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 2541)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 5376)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.7ms | Allocations: 6671)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-04 21:10:05 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.8ms | Allocations: 2280)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2651)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4461)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 5929)
+
+
+Started GET "/conduits/2/edit" for 127.0.0.1 at 2024-08-04 21:10:05 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 930)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Conduit with 'id'=2):
+  
+app/controllers/conduits_controller.rb:65:in `set_conduit'
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:14 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 2539)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 5382)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.4ms | Allocations: 6661)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:24 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 2536)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 5372)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.3ms | Allocations: 6665)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:28 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.3ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1959)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3712)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.6ms | Allocations: 4215)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:35 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 2461)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 5296)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.4ms | Allocations: 6596)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:41 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 2456)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 5291)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.4ms | Allocations: 6570)
+
+
+Started GET "/cables/new" for 127.0.0.1 at 2024-08-04 21:10:43 -0600
+Processing by CablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/new.html.erb within layouts/application
+  Rendered cables/_form.html.erb (Duration: 2.7ms | Allocations: 2322)
+  Rendered cables/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2628)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4369)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 4949)
+
+
+Started GET "/cables/new" for 127.0.0.1 at 2024-08-04 21:10:44 -0600
+Processing by CablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/new.html.erb within layouts/application
+  Rendered cables/_form.html.erb (Duration: 1.3ms | Allocations: 1488)
+  Rendered cables/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1573)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3314)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3819)
+
+
+Started GET "/cables/new" for 127.0.0.1 at 2024-08-04 21:10:45 -0600
+Processing by CablesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/new.html.erb within layouts/application
+  Rendered cables/_form.html.erb (Duration: 1.3ms | Allocations: 1488)
+  Rendered cables/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1573)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3314)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3829)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:10:49 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:46
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:49
+  Rendered cables/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1888)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3641)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 4149)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:10:54 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1359)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3196)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 4779)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:11:03 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:27
+  Rendered conduits/_conduit.html.erb (Duration: 1.0ms | Allocations: 302)
+  Rendered conduits/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1444)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3276)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 4309)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:11:37 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:45
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:48
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:48
+  Rendered cables/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 2370)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 5205)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 6497)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:12:04 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:27
+  Rendered conduits/_conduit.html.erb (Duration: 1.3ms | Allocations: 301)
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1406)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3238)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 4273)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:13:52 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.5ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:27
+  Rendered conduits/index.html.erb within layouts/application (Duration: 48.4ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 2515)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.5ms | Allocations: 3784)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    35:         <th>OD</th>
+    36:       </thead>
+    37:       <tbody>
+    38:         <% @cables.each do |cable| %>
+    39:           <tr id=<%= "row#{cable.id}" %>>
+    40:             <th><%= cable.tag %></th>
+    41:             <td><%= cable.size %></td>
+  
+app/views/conduits/index.html.erb:38
+app/views/conduits/index.html.erb:27
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:14:21 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:38
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:44
+  Rendered conduits/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 2624)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 5467)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.4ms | Allocations: 6768)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:14:34 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:47
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:53
+  Rendered conduits/index.html.erb within layouts/application (Duration: 24.6ms | Allocations: 1811)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 4646)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.6ms | Allocations: 5935)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:15:01 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:47
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:53
+  Rendered conduits/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 1812)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 4647)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.5ms | Allocations: 5922)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:15:52 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1338)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3175)
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 0.4ms | Allocations: 4708)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:15:56 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:45
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:48
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:48
+  Rendered cables/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2367)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4204)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 5251)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:17:52 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:63
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  Rendered cables/index.html.erb within layouts/application (Duration: 24.2ms | Allocations: 2424)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 5259)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.5ms | Allocations: 6550)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:01 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:63
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  Rendered cables/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 2423)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5258)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.5ms | Allocations: 6549)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:13 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:63
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  Rendered cables/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 2423)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 609)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 5259)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.4ms | Allocations: 6554)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-04 21:18:14 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.9ms | Allocations: 2280)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2651)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4461)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 5924)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:34 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 5267)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.4ms | Allocations: 6540)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:39 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 5267)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.4ms | Allocations: 6560)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:49 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.6ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:63
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  Rendered cables/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 2423)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 5258)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.8ms | Allocations: 6545)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:18:54 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:63
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:66
+  Rendered cables/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2422)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 5257)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.5ms | Allocations: 6540)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:19:23 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.3ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 5267)
+Completed 200 OK in 70ms (Views: 61.2ms | ActiveRecord: 0.5ms | Allocations: 6562)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:19:33 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 5268)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.4ms | Allocations: 6563)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:19:37 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 5267)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 0.4ms | Allocations: 6566)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:19:43 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 24.5ms | Allocations: 2432)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 5267)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.5ms | Allocations: 6558)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-04 21:19:58 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.5ms | Allocations: 2280)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2651)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4461)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 5936)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:20:19 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:67
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  Rendered cables/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 2435)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 5270)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.4ms | Allocations: 6557)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-04 21:20:23 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.6ms | Allocations: 2280)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2651)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4461)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 5920)
+
+
+Started GET "/conduits/2/edit" for 127.0.0.1 at 2024-08-04 21:20:23 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.1ms | Allocations: 923)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Conduit with 'id'=2):
+  
+app/controllers/conduits_controller.rb:65:in `set_conduit'
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:29:44 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1359)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3204)
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 0.7ms | Allocations: 4891)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-08-04 21:29:45 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.9ms | Allocations: 352)
+  Rendered users/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 830)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2654)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 4138)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-04 21:29:46 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2584)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4318)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.7ms | Allocations: 5348)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:29:50 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.4ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:67
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  Rendered cables/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1962)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3715)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.6ms | Allocations: 4219)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:29:53 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:47
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:53
+  Rendered conduits/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1828)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3581)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 4164)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:30:51 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:65
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:71
+  Rendered conduits/index.html.erb within layouts/application (Duration: 32.6ms | Allocations: 1865)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 4700)
+Completed 200 OK in 53ms (Views: 48.3ms | ActiveRecord: 0.4ms | Allocations: 5986)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:30:53 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:65
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:71
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1247)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3000)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 3509)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:31:07 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:65
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:71
+  Rendered conduits/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 1865)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 4700)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.4ms | Allocations: 5994)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-04 21:31:09 -0600
+Processing by ConduitsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.9ms | Allocations: 2156)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2460)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4201)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4762)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:31:11 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.1ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:67
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  Rendered cables/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2433)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4270)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 5312)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:31:17 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:65
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:71
+  Rendered conduits/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1247)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3000)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.7ms | Allocations: 3491)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:31:29 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 1868)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 4703)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.3ms | Allocations: 5995)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:31:34 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1339)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4174)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 5960)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:31:39 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:67
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:70
+  Rendered cables/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2433)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4270)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.3ms | Allocations: 5313)
+
+
+Started GET "/cables" for 127.0.0.1 at 2024-08-04 21:31:57 -0600
+Processing by CablesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cables/index.html.erb within layouts/application
+  [1m[36mCable Load (0.2ms)[0m  [1m[34mSELECT "cables".* FROM "cables"[0m
+  ↳ app/views/cables/index.html.erb:66
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  [1m[36mCACHE Conduit Load (0.0ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cables/index.html.erb:69
+  Rendered cables/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2431)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 5266)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.6ms | Allocations: 6559)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-04 21:32:09 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 1867)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 3704)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.5ms | Allocations: 4747)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:32:11 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1338)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3175)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 4716)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2024-08-04 21:32:11 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.8ms | Allocations: 352)
+  Rendered users/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 830)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2654)
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 4129)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-04 21:32:12 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2738)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.5ms | Allocations: 3750)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-04 21:32:13 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2547)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4281)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.5ms | Allocations: 5290)
+
+
