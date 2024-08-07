@@ -1,5 +1,6 @@
 class ConduitsController < ApplicationController
-  before_action :set_conduit, only: %i[ show edit update destroy ]
+  before_action :set_conduit, only: [ :show, :edit, :update, :destroy ]
+  before_action :set_project, only: [ :new, :create, :show, :edit, :update, :destroy ]
   before_action :require_login
 
   # GET /conduits or /conduits.json
@@ -24,6 +25,7 @@ class ConduitsController < ApplicationController
   # POST /conduits or /conduits.json
   def create
     @conduit = Conduit.new(conduit_params)
+    # @conduit.project_id = @project.id
 
     respond_to do |format|
       if @conduit.save
@@ -63,6 +65,10 @@ class ConduitsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_conduit
       @conduit = Conduit.find(params[:id])
+    end
+
+    def set_project
+      @project = Project.find_by_id(params[:project_id])
     end
 
     # Only allow a list of trusted parameters through.

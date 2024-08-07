@@ -26,6 +26,8 @@
   }
 </style>
 
+<%= @project.id %>
+
 <%= form_with(model: conduit) do |form| %>
   <% if conduit.errors.any? %>
     <div style="color: red">
@@ -54,10 +56,10 @@
     <%= form.label :from %>
     <%= form.text_field :from, class: 'entry' %>
   </div>
-  <div class='group'>
+  <div class='group' hidden>
     <%= form.label :project_id %>
-    <%= form.number_field :project_id, class: 'entry' %> 
-  </div>
+    <%= form.number_field :project_id, value: @project.id, class: 'entry' %>
+  </div> 
   <div>
     <%= form.submit class: 'submit' %>
   </div>

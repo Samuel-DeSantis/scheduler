@@ -34699,3 +34699,2961 @@ Processing by ProjectsController#show as HTML
 Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.5ms | Allocations: 5290)
 
 
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:14:38 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 18.8ms | Allocations: 424)
+  Rendered layouts/_navbar.html.erb (Duration: 33.2ms | Allocations: 708)
+  Rendered layouts/_footer.html.erb (Duration: 6.7ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 550.0ms | Allocations: 48400)
+Completed 200 OK in 750ms (Views: 589.9ms | ActiveRecord: 0.0ms | Allocations: 54642)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:14:41 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 444)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:14:41 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 1838)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 2163)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:14:42 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:14:42 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 1838)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2161)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:14:42 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 69.5ms | Allocations: 4065)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 80.7ms | Allocations: 4489)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 88.8ms | Allocations: 6208)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms | Allocations: 6998)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:14:49 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 2652)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2746)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4398)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4718)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:14:55 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 270ms (ActiveRecord: 1.0ms | Allocations: 23989)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:14:56 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 60.6ms | Allocations: 19213)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 67.9ms | Allocations: 21110)
+Completed 200 OK in 196ms (Views: 68.8ms | ActiveRecord: 1.3ms | Allocations: 34580)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2024-08-06 22:14:57 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 3]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 40.2ms | Allocations: 6234)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 7968)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 1.2ms | Allocations: 9602)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:14:57 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 47.7ms | Allocations: 20459)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 22193)
+Completed 200 OK in 60ms (Views: 54.9ms | ActiveRecord: 1.3ms | Allocations: 23133)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:14:59 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:14:59 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1839)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2162)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:15:03 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 450)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:15:04 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1862)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2182)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:15:04 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:15:04 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1860)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:15:05 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.8ms | Allocations: 2676)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2770)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4421)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4742)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:15:11 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 184ms (ActiveRecord: 0.2ms | Allocations: 867)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:15:11 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 987)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2743)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 3746)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2024-08-06 22:15:19 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 3]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1010)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2744)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 3690)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:15:19 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1008)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2742)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 3698)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:15:19 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3474)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 4410)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:18:46 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 57.4ms | Allocations: 5763)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 69.8ms | Allocations: 6086)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 7906)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.0ms | Allocations: 8965)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:19:02 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.4ms | Allocations: 1488)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1573)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3322)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3835)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:20:28 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 3.0ms | Allocations: 2172)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2488)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5304)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 6584)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:20:59 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 31.4ms | Allocations: 2191)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 33.0ms | Allocations: 2506)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 5322)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 6600)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:23:48 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1360)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 4195)
+Completed 200 OK in 61ms (Views: 54.2ms | ActiveRecord: 1.1ms | Allocations: 6156)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:23:49 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.6ms | Allocations: 2191)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 16.3ms | Allocations: 2522)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4350)
+Completed 200 OK in 47ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 5363)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:24:02 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 2828)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 4589)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.4ms | Allocations: 5169)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:24:03 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1247)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3000)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 3496)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:26:25 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 10688)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 609)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 30586)
+Completed 200 OK in 69ms (Views: 58.5ms | ActiveRecord: 2.5ms | Allocations: 34820)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-06 22:26:25 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:65:in `set_conduit'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.7ms | Allocations: 2331)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2695)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4428)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 6049)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:26:27 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 168)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2204)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3066)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:26:28 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 1944)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 2264)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:26:29 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 1931)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 2251)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:26:31 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3702)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5540)
+Completed 200 OK in 29ms (Views: 13.8ms | ActiveRecord: 1.5ms | Allocations: 16567)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:26:32 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 56.2ms | Allocations: 11598)
+  Rendered layout layouts/application.html.erb (Duration: 57.0ms | Allocations: 11669)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 1.3ms | Allocations: 13260)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x000000000168a0>
+Did you mean?  for
+               fork):
+    125:         </tr>
+    126:       <% end %>
+    127:         <tr>
+    128:           <th><%= form.text_field :tag %></th>
+    129:           <td><%= form.text_field :size %></td>
+    130:           <td><%= form.text_field :to %></td>
+    131:           <td><%= form.text_field :from %></td>
+  
+app/views/projects/show.html.erb:128
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:27:04 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 41.1ms | Allocations: 7122)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 7194)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.6ms | Allocations: 8893)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `project' for #<ActionView::Base:0x00000000016be8>
+Did you mean?  @project):
+    124:           <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+    125:         </tr>
+    126:       <% end %>
+    127:       <%= form_with(model: project) do |form| %>
+    128:         <tr>
+    129:           <th><%= form.text_field :tag %></th>
+    130:           <td><%= form.text_field :size %></td>
+  
+app/views/projects/show.html.erb:127
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:27:23 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 39.1ms | Allocations: 3909)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 6729)
+Completed 200 OK in 58ms (Views: 53.1ms | ActiveRecord: 0.6ms | Allocations: 8460)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:27:40 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 39.4ms | Allocations: 7166)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 7238)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.6ms | Allocations: 8933)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `conduit' for #<ActionView::Base:0x00000000016fd0>
+Did you mean?  conduit_url):
+    124:           <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+    125:         </tr>
+    126:       <% end %>
+    127:       <%= form_with(model: conduit) do |form| %>
+    128:         <tr>
+    129:           <th><%= form.text_field :tag %></th>
+    130:           <td><%= form.text_field :size %></td>
+  
+app/views/projects/show.html.erb:127
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:31:39 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 13.4ms | Allocations: 3953)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4025)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.1ms | Allocations: 11373)
+
+
+  
+ActionView::Template::Error (No association found for name `projects'. Has it been defined yet?):
+    102:   <%= link_to "Edit", edit_project_path(@project), id: 'edit' %>
+    103:   <%= button_to "Delete", @project, method: :delete, id: 'delete' %>
+    104: </div>
+    105: <% if @project.conduits == [] %>
+    106:   <p>There aren't any conduits yet!</p>
+    107: <% else %>
+    108:   <table>
+  
+app/models/conduit.rb:6:in `<class:Conduit>'
+app/models/conduit.rb:1:in `<main>'
+app/views/projects/show.html.erb:105
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:32:08 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 40.3ms | Allocations: 16253)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 16325)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 3.1ms | Allocations: 23725)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `conduit' for #<ActionView::Base:0x00000000024f18>
+Did you mean?  conduit_url):
+    124:           <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+    125:         </tr>
+    126:       <% end %>
+    127:       <%= form_with(model: conduit) do |form| %>
+    128:         <tr>
+    129:           <th><%= form.text_field :tag %></th>
+    130:           <td><%= form.text_field :size %></td>
+  
+app/views/projects/show.html.erb:127
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:36:16 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 79.4ms | Allocations: 12687)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 607)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 133.7ms | Allocations: 32560)
+Completed 200 OK in 167ms (Views: 134.6ms | ActiveRecord: 6.1ms | Allocations: 40289)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:42:03 -0600
+  
+NameError (uninitialized constant Projects):
+  
+app/controllers/conduits_controller.rb:1:in `<main>'
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:45:42 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Completed 404 Not Found in 10ms (ActiveRecord: 0.4ms | Allocations: 4593)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/projects/1/" for 127.0.0.1 at 2024-08-06 22:45:59 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 15.7ms | Allocations: 12031)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 607)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 31903)
+Completed 200 OK in 65ms (Views: 57.2ms | ActiveRecord: 0.8ms | Allocations: 35328)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:46:01 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 541)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/projects/1/" for 127.0.0.1 at 2024-08-06 22:46:29 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 35.4ms | Allocations: 2601)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 5421)
+Completed 200 OK in 57ms (Views: 50.1ms | ActiveRecord: 0.7ms | Allocations: 7147)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:46:29 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 539)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/projects/1/" for 127.0.0.1 at 2024-08-06 22:47:20 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 11907)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 30786)
+Completed 200 OK in 86ms (Views: 70.7ms | ActiveRecord: 3.7ms | Allocations: 38140)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:47:21 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 37.9ms | Allocations: 1992)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 40.9ms | Allocations: 2330)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 4145)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 0.3ms | Allocations: 5734)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:47:37 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2830)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5665)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 6950)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:47:37 -0600
+Processing by ConduitsController#new as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 551)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:47:45 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1246)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3009)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 3510)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:47:47 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:47:47 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.0ms | Allocations: 168)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2092)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2953)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:47:47 -0600
+Processing by ProjectsController#index as HTML
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 361)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:47:47 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1860)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:47:48 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.6ms | Allocations: 3138)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3552)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5276)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6066)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:47:53 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 199ms (ActiveRecord: 0.8ms | Allocations: 8883)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:47:54 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3689)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5582)
+Completed 200 OK in 22ms (Views: 12.5ms | ActiveRecord: 0.7ms | Allocations: 11292)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:47:55 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2568)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4302)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.5ms | Allocations: 5316)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:47:56 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 28.1ms | Allocations: 1929)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 30.3ms | Allocations: 2249)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3982)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.1ms | Allocations: 4997)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:48:23 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-02", "size"=>"2", "to"=>"asd", "from"=>"ghj"}, "commit"=>"Create Conduit"}
+Completed 404 Not Found in 3ms (ActiveRecord: 0.0ms | Allocations: 761)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:48:23 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.5ms | Allocations: 1264)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1352)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3095)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 4041)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:48:37 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1247)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3005)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 3503)
+
+
+  [1m[36mConduit Load (0.4ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:48:47 -0600
+Processing by ConduitsController#new as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 539)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:49:24 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1246)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3009)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.6ms | Allocations: 3508)
+
+
+Started GET "/conduits/1/edit" for 127.0.0.1 at 2024-08-06 22:49:25 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:67:in `set_conduit'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1511)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project without an ID):
+  
+app/controllers/conduits_controller.rb:71:in `set_project'
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:49:28 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1246)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3009)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 3497)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:49:39 -0600
+Processing by ConduitsController#new as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.6ms | Allocations: 1352)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1449)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 20321)
+Completed 200 OK in 79ms (Views: 53.1ms | ActiveRecord: 2.1ms | Allocations: 32204)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:49:46 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-02", "size"=>"2", "to"=>"asd", "from"=>"ghj"}, "commit"=>"Create Conduit"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 1928)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/conduits_controller.rb:28:in `create'
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:50:30 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4416)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 608)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 7261)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 1.2ms | Allocations: 8581)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:50:31 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1247)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 3000)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.6ms | Allocations: 3503)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:50:32 -0600
+Processing by ConduitsController#new as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 27.6ms | Allocations: 2190)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 29.3ms | Allocations: 2479)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 2550)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.1ms | Allocations: 3644)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/new.html.erb:3
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:50:35 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1246)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3009)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 3503)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:50:36 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:50:36 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 168)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2094)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2956)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:50:36 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.1ms | Allocations: 3130)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3544)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5263)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6053)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:50:37 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 2639)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2733)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4384)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4704)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:50:41 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 193ms (ActiveRecord: 1.1ms | Allocations: 6578)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:50:42 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3701)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5589)
+Completed 200 OK in 22ms (Views: 13.3ms | ActiveRecord: 0.8ms | Allocations: 11398)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:50:42 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6394)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8128)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 1.4ms | Allocations: 9703)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:50:43 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.3ms | Allocations: 1307)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1398)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3131)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 4663)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:50:53 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 3.5ms | Allocations: 1966)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2297)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 5105)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.2ms | Allocations: 6827)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:51:02 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 3.2ms | Allocations: 1965)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2296)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 5104)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.1ms | Allocations: 6828)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:51:12 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 2.3ms | Allocations: 1965)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 2277)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 5085)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.2ms | Allocations: 6807)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:52:09 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 41.3ms | Allocations: 2579)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 5389)
+Completed 200 OK in 61ms (Views: 55.5ms | ActiveRecord: 1.0ms | Allocations: 7111)
+
+
+Started GET "/projects/1/edit" for 127.0.0.1 at 2024-08-06 22:52:09 -0600
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 1.8ms | Allocations: 1193)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1554)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 3287)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms | Allocations: 4276)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:52:10 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 3.6ms | Allocations: 1965)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2276)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4086)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 5571)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:52:18 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-02", "size"=>"2", "to"=>"asd", "from"=>"ghj"}, "commit"=>"Create Conduit"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 1825)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/conduits_controller.rb:28:in `create'
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:53:42 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 34.4ms | Allocations: 1597)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 36.5ms | Allocations: 1874)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 1947)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.2ms | Allocations: 3652)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
+<%= @project.id %>
+
+<%= form_with(model: conduit) do |form| %>
+  <% if conduit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+
+      <ul>
+        <% conduit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='group'>
+    <%= form.label :tag %>
+    <%= form.text_field :tag, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :size %>
+    <%= form.text_field :size, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :to %>
+    <%= form.text_field :to, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :from %>
+    <%= form.text_field :from, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :project_id %>
+    <%= form.number_field :project_id, value: @project.id class: 'entry' %>%
+  </div> 
+  <div>
+    <%= form.submit class: 'submit' %>
+  </div>
+<% end %>
+
+):
+1:    <style type='text/css'>
+2:      .group {
+3:        padding-bottom: 0.5rem;
+4:      }
+5:      .entry {
+6:        display: block;
+7:        padding: 0.25rem;
+8:      }
+9:      .submit {
+10:        padding-top: 0.5rem;
+11:        padding-bottom: 0.5rem;
+12:        padding-left: 1rem;
+13:        padding-right: 1rem;
+14:    
+15:        text-align: right;
+16:        border: solid green 1px;
+17:        border-radius: 0.25rem;
+18:        background-color: white;
+19:        color: green;
+20:        text-decoration: none;
+21:      }
+22:      .submit:hover {
+23:        cursor: pointer;
+24:        background-color: green;
+25:        color: white;
+26:      }
+27:    </style>
+28:    
+29:    <%= @project.id %>
+30:    
+31:    <%= form_with(model: conduit) do |form| %>
+32:      <% if conduit.errors.any? %>
+33:        <div style="color: red">
+34:          <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+35:    
+36:          <ul>
+37:            <% conduit.errors.each do |error| %>
+38:              <li><%= error.full_message %></li>
+39:            <% end %>
+40:          </ul>
+41:        </div>
+42:      <% end %>
+43:      <div class='group'>
+44:        <%= form.label :tag %>
+45:        <%= form.text_field :tag, class: 'entry' %>
+46:      </div>
+47:      <div class='group'>
+48:        <%= form.label :size %>
+49:        <%= form.text_field :size, class: 'entry' %>
+50:      </div>
+51:      <div class='group'>
+52:        <%= form.label :to %>
+53:        <%= form.text_field :to, class: 'entry' %>
+54:      </div>
+55:      <div class='group'>
+56:        <%= form.label :from %>
+57:        <%= form.text_field :from, class: 'entry' %>
+58:      </div>
+59:      <div class='group'>
+60:        <%= form.label :project_id %>
+61:        <%= form.number_field :project_id, value: @project.id class: 'entry' %>%
+62:      </div> 
+63:      <div>
+64:        <%= form.submit class: 'submit' %>
+65:      </div>
+66:    <% end %>
+  
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/new.html.erb:2
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:53:48 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1339)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 611)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4187)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.3ms | Allocations: 5734)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:53:49 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2547)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 4281)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.4ms | Allocations: 5305)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:53:50 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.0ms | Allocations: 1578)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1636)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1708)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 2645)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
+<%= @project.id %>
+
+<%= form_with(model: conduit) do |form| %>
+  <% if conduit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+
+      <ul>
+        <% conduit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='group'>
+    <%= form.label :tag %>
+    <%= form.text_field :tag, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :size %>
+    <%= form.text_field :size, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :to %>
+    <%= form.text_field :to, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :from %>
+    <%= form.text_field :from, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :project_id %>
+    <%= form.number_field :project_id, value: @project.id class: 'entry' %>%
+  </div> 
+  <div>
+    <%= form.submit class: 'submit' %>
+  </div>
+<% end %>
+
+):
+1:    <style type='text/css'>
+2:      .group {
+3:        padding-bottom: 0.5rem;
+4:      }
+5:      .entry {
+6:        display: block;
+7:        padding: 0.25rem;
+8:      }
+9:      .submit {
+10:        padding-top: 0.5rem;
+11:        padding-bottom: 0.5rem;
+12:        padding-left: 1rem;
+13:        padding-right: 1rem;
+14:    
+15:        text-align: right;
+16:        border: solid green 1px;
+17:        border-radius: 0.25rem;
+18:        background-color: white;
+19:        color: green;
+20:        text-decoration: none;
+21:      }
+22:      .submit:hover {
+23:        cursor: pointer;
+24:        background-color: green;
+25:        color: white;
+26:      }
+27:    </style>
+28:    
+29:    <%= @project.id %>
+30:    
+31:    <%= form_with(model: conduit) do |form| %>
+32:      <% if conduit.errors.any? %>
+33:        <div style="color: red">
+34:          <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+35:    
+36:          <ul>
+37:            <% conduit.errors.each do |error| %>
+38:              <li><%= error.full_message %></li>
+39:            <% end %>
+40:          </ul>
+41:        </div>
+42:      <% end %>
+43:      <div class='group'>
+44:        <%= form.label :tag %>
+45:        <%= form.text_field :tag, class: 'entry' %>
+46:      </div>
+47:      <div class='group'>
+48:        <%= form.label :size %>
+49:        <%= form.text_field :size, class: 'entry' %>
+50:      </div>
+51:      <div class='group'>
+52:        <%= form.label :to %>
+53:        <%= form.text_field :to, class: 'entry' %>
+54:      </div>
+55:      <div class='group'>
+56:        <%= form.label :from %>
+57:        <%= form.text_field :from, class: 'entry' %>
+58:      </div>
+59:      <div class='group'>
+60:        <%= form.label :project_id %>
+61:        <%= form.number_field :project_id, value: @project.id class: 'entry' %>%
+62:      </div> 
+63:      <div>
+64:        <%= form.submit class: 'submit' %>
+65:      </div>
+66:    <% end %>
+  
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/new.html.erb:2
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:03 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 30.0ms | Allocations: 1588)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 31.9ms | Allocations: 1865)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 1938)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.2ms | Allocations: 3636)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <style type='text/css'>
+  .group {
+    padding-bottom: 0.5rem;
+  }
+  .entry {
+    display: block;
+    padding: 0.25rem;
+  }
+  .submit {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    text-align: right;
+    border: solid green 1px;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+  }
+  .submit:hover {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+</style>
+
+<%= @project.id %>
+
+<%= form_with(model: conduit) do |form| %>
+  <% if conduit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+
+      <ul>
+        <% conduit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class='group'>
+    <%= form.label :tag %>
+    <%= form.text_field :tag, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :size %>
+    <%= form.text_field :size, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :to %>
+    <%= form.text_field :to, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :from %>
+    <%= form.text_field :from, class: 'entry' %>
+  </div>
+  <div class='group'>
+    <%= form.label :project_id %>
+    <%= form.number_field :project_id, value: @project.id class: 'entry' %>
+  </div> 
+  <div>
+    <%= form.submit class: 'submit' %>
+  </div>
+<% end %>
+
+):
+1:    <style type='text/css'>
+2:      .group {
+3:        padding-bottom: 0.5rem;
+4:      }
+5:      .entry {
+6:        display: block;
+7:        padding: 0.25rem;
+8:      }
+9:      .submit {
+10:        padding-top: 0.5rem;
+11:        padding-bottom: 0.5rem;
+12:        padding-left: 1rem;
+13:        padding-right: 1rem;
+14:    
+15:        text-align: right;
+16:        border: solid green 1px;
+17:        border-radius: 0.25rem;
+18:        background-color: white;
+19:        color: green;
+20:        text-decoration: none;
+21:      }
+22:      .submit:hover {
+23:        cursor: pointer;
+24:        background-color: green;
+25:        color: white;
+26:      }
+27:    </style>
+28:    
+29:    <%= @project.id %>
+30:    
+31:    <%= form_with(model: conduit) do |form| %>
+32:      <% if conduit.errors.any? %>
+33:        <div style="color: red">
+34:          <h2><%= pluralize(conduit.errors.count, "error") %> prohibited this conduit from being saved:</h2>
+35:    
+36:          <ul>
+37:            <% conduit.errors.each do |error| %>
+38:              <li><%= error.full_message %></li>
+39:            <% end %>
+40:          </ul>
+41:        </div>
+42:      <% end %>
+43:      <div class='group'>
+44:        <%= form.label :tag %>
+45:        <%= form.text_field :tag, class: 'entry' %>
+46:      </div>
+47:      <div class='group'>
+48:        <%= form.label :size %>
+49:        <%= form.text_field :size, class: 'entry' %>
+50:      </div>
+51:      <div class='group'>
+52:        <%= form.label :to %>
+53:        <%= form.text_field :to, class: 'entry' %>
+54:      </div>
+55:      <div class='group'>
+56:        <%= form.label :from %>
+57:        <%= form.text_field :from, class: 'entry' %>
+58:      </div>
+59:      <div class='group'>
+60:        <%= form.label :project_id %>
+61:        <%= form.number_field :project_id, value: @project.id class: 'entry' %>
+62:      </div> 
+63:      <div>
+64:        <%= form.submit class: 'submit' %>
+65:      </div>
+66:    <% end %>
+  
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/_form.html.erb:61: syntax error, unexpected label, expecting ')'
+app/views/conduits/new.html.erb:2
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:11 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 31.4ms | Allocations: 2197)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 33.5ms | Allocations: 2509)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 5327)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.2ms | Allocations: 7057)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:23 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 56.6ms | Allocations: 2197)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 59.2ms | Allocations: 2509)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 606)
+  Rendered layouts/_footer.html.erb (Duration: 10.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 86.2ms | Allocations: 5317)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 0.2ms | Allocations: 7042)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:54:25 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1848)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3601)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 4183)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:25 -0600
+Processing by ConduitsController#new as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.5ms | Allocations: 1547)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1676)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 2721)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/new.html.erb:2
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:54:29 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1246)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3009)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 3507)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:54:29 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1338)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3175)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 4723)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:30 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2547)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4281)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.5ms | Allocations: 5303)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:54:30 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1007)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2741)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 3683)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:30 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3474)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 4410)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:31 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.3ms | Allocations: 1497)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1582)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3315)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 4278)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:54:38 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-02", "size"=>"2", "to"=>"asd", "from"=>"fgh", "project_id"=>"1"}, "commit"=>"Create Conduit"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 1835)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/conduits_controller.rb:28:in `create'
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:55 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 11888)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 30761)
+Completed 200 OK in 69ms (Views: 54.5ms | ActiveRecord: 2.5ms | Allocations: 38142)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:56 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1742)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3476)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.6ms | Allocations: 4414)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:54:57 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3402)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5156)
+Completed 200 OK in 31ms (Views: 12.9ms | ActiveRecord: 1.6ms | Allocations: 15543)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2024-08-06 22:54:58 -0600
+Processing by ProjectsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 2.1ms | Allocations: 1091)
+  Rendered projects/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1454)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3195)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 3781)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:58 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1743)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3477)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 4411)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:54:59 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3474)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 4406)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:54:59 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3250)
+
+
+  
+NoMethodError (undefined method `set_project' for #<ConduitsController:0x000000000535c0>
+Did you mean?  edit_project_url):
+  
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+turbo-rails (2.0.6) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.6) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+actiontext (7.0.8.4) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.8.4) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.8.4) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.8.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.8.4) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.8.4) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.8.4) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.8.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.8.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:08 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 11888)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 30795)
+Completed 200 OK in 68ms (Views: 55.4ms | ActiveRecord: 2.8ms | Allocations: 38223)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:55:09 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3402)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 5163)
+Completed 200 OK in 28ms (Views: 11.7ms | ActiveRecord: 1.4ms | Allocations: 15589)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:55:10 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1009)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2743)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 3673)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:10 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3475)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.9ms | Allocations: 4411)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:55:11 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 0.9ms | Allocations: 1547)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1609)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1681)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2664)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/new.html.erb:2
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:17 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3484)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.7ms | Allocations: 4426)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:55:17 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:55:17 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.0ms | Allocations: 168)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2088)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2950)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:55:17 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:55:18 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1831)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2151)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:55:18 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.8ms | Allocations: 3130)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3544)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 5263)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 6053)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:55:19 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 13.0ms | Allocations: 2641)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 13.5ms | Allocations: 2735)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 4386)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 4706)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:55:23 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 189ms (ActiveRecord: 0.2ms | Allocations: 1216)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:55:23 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2796)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 3856)
+
+
+Started GET "/projects/3" for 127.0.0.1 at 2024-08-06 22:55:23 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 3]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1007)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2741)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 3679)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:24 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1740)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3474)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.5ms | Allocations: 4416)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:55:25 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 0.5ms | Allocations: 1546)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1604)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1675)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2153)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/new.html.erb:2
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:39 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 11888)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 30761)
+Completed 200 OK in 72ms (Views: 57.7ms | ActiveRecord: 2.4ms | Allocations: 38133)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:55:41 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3402)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5156)
+Completed 200 OK in 29ms (Views: 14.3ms | ActiveRecord: 1.4ms | Allocations: 15556)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:42 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1743)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3477)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 4411)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:55:43 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.6ms | Allocations: 1574)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1671)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3483)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5725)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:55:49 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-02", "size"=>"2", "to"=>"asd", "from"=>"ghj", "project_id"=>"1"}, "commit"=>"Create Conduit"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mConduit Create (1.6ms)[0m  [1m[32mINSERT INTO "conduits" ("tag", "size", "to", "from", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tag", "K-02"], ["size", 2.0], ["to", "asd"], ["from", "ghj"], ["project_id", 1], ["created_at", "2024-08-07 04:55:49.571830"], ["updated_at", "2024-08-07 04:55:49.571830"]]
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+Redirected to http://127.0.0.1:3000/conduits/2
+Completed 302 Found in 17ms (ActiveRecord: 5.1ms | Allocations: 5633)
+
+
+Started GET "/conduits/2" for 127.0.0.1 at 2024-08-06 22:55:49 -0600
+Processing by ConduitsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:67:in `set_conduit'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/show.html.erb within layouts/application
+  Rendered conduits/_conduit.html.erb (Duration: 5.6ms | Allocations: 313)
+  Rendered conduits/show.html.erb within layouts/application (Duration: 25.0ms | Allocations: 1218)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 2958)
+Completed 200 OK in 46ms (Views: 39.3ms | ActiveRecord: 0.5ms | Allocations: 5190)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:55:51 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1966)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3720)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 4241)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:55:53 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2738)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.4ms | Allocations: 3733)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:55:53 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  [1m[36mCable Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 2]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2475)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4209)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.6ms | Allocations: 5131)
+
+
+Started GET "/conduits/2/edit" for 127.0.0.1 at 2024-08-06 22:56:00 -0600
+Processing by ConduitsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:67:in `set_conduit'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/edit.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.1ms | Allocations: 1547)
+  Rendered conduits/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1788)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1859)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 3394)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/edit.html.erb:3
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:56:03 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 2]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2475)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4219)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.7ms | Allocations: 5148)
+
+
+Started GET "/projects/1/conduits/new" for 127.0.0.1 at 2024-08-06 22:56:04 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.9ms | Allocations: 1497)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1582)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3315)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 4279)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:05 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2740)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 3728)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:56:06 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.3ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  [1m[36mCable Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 2]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2474)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4208)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.8ms | Allocations: 5144)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:08 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2738)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 3740)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:56:08 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1007)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2741)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 3683)
+
+
+Started GET "/projects/2/conduits/new" for 127.0.0.1 at 2024-08-06 22:56:09 -0600
+Processing by ConduitsController#new as HTML
+  Parameters: {"project_id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.4ms | Allocations: 1497)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1582)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3315)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 4283)
+
+
+Started POST "/conduits" for 127.0.0.1 at 2024-08-06 22:56:24 -0600
+Processing by ConduitsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "conduit"=>{"tag"=>"K-11", "size"=>"3", "to"=>"BLDG", "from"=>"LP-1", "project_id"=>"2"}, "commit"=>"Create Conduit"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mConduit Create (1.5ms)[0m  [1m[32mINSERT INTO "conduits" ("tag", "size", "to", "from", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["tag", "K-11"], ["size", 3.0], ["to", "BLDG"], ["from", "LP-1"], ["project_id", 2], ["created_at", "2024-08-07 04:56:24.742547"], ["updated_at", "2024-08-07 04:56:24.742547"]]
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/conduits_controller.rb:31:in `block in create'
+Redirected to http://127.0.0.1:3000/conduits/3
+Completed 302 Found in 14ms (ActiveRecord: 3.6ms | Allocations: 3745)
+
+
+Started GET "/conduits/3" for 127.0.0.1 at 2024-08-06 22:56:24 -0600
+Processing by ConduitsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:67:in `set_conduit'
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/show.html.erb within layouts/application
+  Rendered conduits/_conduit.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered conduits/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 419)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2152)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 3671)
+
+
+Started GET "/conduits" for 127.0.0.1 at 2024-08-06 22:56:25 -0600
+Processing by ConduitsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/index.html.erb within layouts/application
+  [1m[36mConduit Load (0.2ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits"[0m
+  ↳ app/views/conduits/index.html.erb:66
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/conduits/index.html.erb:72
+  Rendered conduits/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2570)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4323)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 4825)
+
+
+Started GET "/conduits/new" for 127.0.0.1 at 2024-08-06 22:56:26 -0600
+Processing by ConduitsController#new as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/conduits_controller.rb:71:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering conduits/new.html.erb within layouts/application
+  Rendered conduits/_form.html.erb (Duration: 1.0ms | Allocations: 1546)
+  Rendered conduits/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1604)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1675)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 2722)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    26:   }
+    27: </style>
+    28: 
+    29: <%= @project.id %>
+    30: 
+    31: <%= form_with(model: conduit) do |form| %>
+    32:   <% if conduit.errors.any? %>
+  
+app/views/conduits/_form.html.erb:29
+app/views/conduits/new.html.erb:2
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:30 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2748)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 3747)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:56:31 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 3]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3475)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 4399)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:32 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2738)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.3ms | Allocations: 3738)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:56:33 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 2]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2474)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4208)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.8ms | Allocations: 5138)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2024-08-06 22:56:35 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:56:35 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 113)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1931)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2675)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:35 -0600
+Processing by ProjectsController#index as HTML
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-06 22:56:35 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 1860)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2180)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-06 22:56:37 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 2722)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2827)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4546)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5271)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2024-08-06 22:56:42 -0600
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"sdesantis", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdesantis"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 172ms (ActiveRecord: 0.2ms | Allocations: 1224)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:42 -0600
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2741)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 3745)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2024-08-06 22:56:43 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 2]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 3]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3475)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 4409)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:44 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2738)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 3748)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2024-08-06 22:56:45 -0600
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:67:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mConduit Load (0.1ms)[0m  [1m[34mSELECT "conduits".* FROM "conduits" WHERE "conduits"."project_id" = ?[0m  [["project_id", 1]]
+  ↳ app/views/projects/show.html.erb:105
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 1]]
+  ↳ app/views/projects/show.html.erb:123
+  [1m[36mCable Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "cables" WHERE "cables"."conduit_id" = ?[0m  [["conduit_id", 2]]
+  ↳ app/views/projects/show.html.erb:123
+  Rendered projects/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2475)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4209)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.6ms | Allocations: 5143)
+
+
+Started GET "/projects" for 127.0.0.1 at 2024-08-06 22:56:46 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/projects/index.html.erb:40
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 985)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2738)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 3728)
+
+
