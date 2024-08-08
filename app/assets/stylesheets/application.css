@@ -13,3 +13,121 @@
  *= require_tree .
  *= require_self
  */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+
+  --txt-primary: black;
+  --txt-secondary: white;
+  --txt-accent: #905e0c;
+
+  --bg-primary: white;
+  --bg-secondary: #023047;
+  --bg-accent: #905e0c;
+}
+.sm {font-size: 0.75rem;}
+.md {font-size: 1rem;}
+.lg {font-size: 1.5rem;}
+.xl {font-size: 2rem;}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,.06), 0 3px 6px rgba(0,0,0,.13);
+}
+.brand {
+  font-weight: 600;
+  color: var(--txt-accent);
+  text-decoration: none;
+}
+#sign_in_out {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border: solid var(--bg-accent) 1px;
+  border-radius: 0.25rem;
+  color: var(--txt-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+#sign_in_out:hover {
+  background-color: var(--txt-accent);
+  color: var(--txt-secondary);
+}
+.links {
+  margin-right: 0.5rem;
+  /* color: var(--primary-txt-light); */
+  text-decoration: none;
+  font-weight: 600;
+  color: #686868;
+}
+.links:hover {
+  color: black;
+}
+main {
+  padding-top: 10rem;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 75rem;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text {
+  text-wrap: balance;
+}
+.heading {
+  color: var(--txt-accent);
+  padding-bottom: 1rem;
+  text-wrap: balance;
+}
+.sub {
+  padding-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.25rem;
+  text-wrap: balance;
+}
+.hero-image {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem grey;
+}
+.action-btn {
+  padding: 1rem;
+  border: solid var(--bg-accent) 1px;
+  border-radius: 0.25rem;
+  color: var(--txt-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--txt-accent);
+}
+.action-btn:hover {
+  background-color: #ce8818;
+  border: solid #ce8818 1px;
+  color: var(--txt-secondary);
+}
+.info-container {
+  padding-top: 15rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}

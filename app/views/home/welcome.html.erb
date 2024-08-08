@@ -1,19 +1,26 @@
-<style>
-  #hero {
-
-  }
-  #heading {
-    font-size: 3rem;
-    margin: 0;
-  }
-</style>
-
 <main>
-  <section id='hero'>
-    <h1 id='heading'>Cable and Conduit Scheduler</h1>
-    <p>Created by an electrical engineer for electrical engineers.</p>
-    <p>Manage complex cable and conduit schedules in one place. Upgrade from spreadsheets to the 21st century.</p>
+  <section class='hero-container'>
+    <div class='hero'>
+      <div class='hero-text'>
+        <div class='heading xl'>
+          <h1 >Simplify Your Cable </h1>
+          <h1 >& Conduit Schedules </h1>
+        </div>
+        <p class='sub md'>Efficient cable and conduit managment system that reduces the complexity of large projects and increases the speed of updating and optimizing schedules.</p>
+        <%= link_to 'Get Started', '/sign_in', class: 'action-btn' %>
+
+      </div>
+      <%= image_tag("/photo.jpg", alt: "Conduit & Cable Tray", class: 'hero-image') %>
+    </div>
   </section>
-  <section></section>
+  <section class='info-container'>
+    <div class='info'>
+      <div class='heading xl'>Why choose Scheduler?</div>
+      <div>
+        <div>asd</div>
+        <div>fgh</div>
+      </div>
+    </div>
+  </section>
   <section></section>
 </main>
