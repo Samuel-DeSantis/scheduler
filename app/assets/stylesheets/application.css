@@ -44,7 +44,7 @@ nav {
   color: var(--txt-accent);
   text-decoration: none;
 }
-#sign_in_out {
+.btn-hollow {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -53,15 +53,16 @@ nav {
   border: solid var(--bg-accent) 1px;
   border-radius: 0.25rem;
   color: var(--txt-accent);
+  background-color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
 }
-#sign_in_out:hover {
+.btn-hollow:hover {
   background-color: var(--txt-accent);
   color: var(--txt-secondary);
 }
 .links {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   /* color: var(--primary-txt-light); */
   text-decoration: none;
   font-weight: 600;
@@ -69,6 +70,16 @@ nav {
 }
 .links:hover {
   color: black;
+}
+.link-back {
+  top: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+}
+.link-back:hover {
+  text-decoration: underline;
 }
 main {
   padding-top: 10rem;
@@ -109,7 +120,7 @@ main {
   border-radius: 0.5rem;
   box-shadow: 0.15rem 0.15rem 0.15rem grey;
 }
-.action-btn {
+.btn-solid {
   padding: 1rem;
   border: solid var(--bg-accent) 1px;
   border-radius: 0.25rem;
@@ -118,7 +129,7 @@ main {
   font-weight: 600;
   background-color: var(--txt-accent);
 }
-.action-btn:hover {
+.btn-solid:hover {
   background-color: #b87a16;
   border: solid #b87a16 1px;
   color: var(--txt-secondary);
@@ -168,4 +179,29 @@ main {
 .bad {
   color: rgb(190 18 60 / 1);
   background-color: rgb(255, 228, 230, 0.75);
+}
+.form-container {
+  display: flex;
+  padding-top: 10rem;
+  justify-content: center;
+}
+.form {
+  padding-bottom: 2rem;
+}
+.form-header {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: var(--txt-accent);
+}
+.form-subsection {
+  display: block;
+  text-align: center;
+}
+.form-group {
+  padding-bottom: 0.5rem;
+}
+.form-entry {
+  display: block;
+  padding: 0.25rem;
 }

@@ -1,31 +1,3 @@
-<style type='text/css'>
-  .group {
-    padding-bottom: 0.5rem;
-  }
-  .entry {
-    display: block;
-    padding: 0.25rem;
-  }
-  .submit {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    text-align: right;
-    border: solid green 1px;
-    border-radius: 0.25rem;
-    background-color: white;
-    color: green;
-    text-decoration: none;
-  }
-  .submit:hover {
-    cursor: pointer;
-    background-color: green;
-    color: white;
-  }
-</style>
-
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div style="color: red">
@@ -37,27 +9,27 @@
       </ul>
     </div>
   <% end %>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :username %>
-    <%= form.text_field :username, class: 'entry' %>
+    <%= form.text_field :username, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :email %>
-    <%= form.text_field :email, class: 'entry' %>
+    <%= form.text_field :email, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :first_name %>
-    <%= form.text_field :first_name, class: 'entry' %>
+    <%= form.text_field :first_name, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, class: 'entry' %>
+    <%= form.text_field :last_name, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label 'Password' %>
-    <%= form.password_field :password, class: 'entry' %>
+    <%= form.password_field :password, class: 'form-entry' %>
   </div>
   <div>
-    <%= form.submit 'Sign Up', class: 'submit' %>
+    <%= form.submit 'Sign Up', class: 'btn-hollow' %>
   </div>
 <% end %>

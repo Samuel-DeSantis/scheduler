@@ -43,11 +43,11 @@
     <div>
       <%= link_to 'User', user_path(session[:user_id]), class: 'links' %>
       <%= link_to 'Projects', projects_path, class: 'links' %>
-      <%= link_to 'Sign Out', sign_out_path, id: 'sign_in_out' %>
+      <%= link_to 'Sign Out', sign_out_path, class: 'btn-hollow' %>
     </div>
 
   <% else  %>
-    <%= link_to 'Sign In', '/sign_in', id: 'sign_in_out' %>
+    <%= link_to 'Sign In', '/sign_in', class: 'btn-hollow' %>
   <% end %>
   <%# <%= link_to '[NAME OF LINK]', [ROUTE]_path, id: '[CSS SELECTOR]' %>
 </nav>

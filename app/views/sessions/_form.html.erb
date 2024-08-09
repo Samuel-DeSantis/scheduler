@@ -1,55 +1,13 @@
-<style type='text/css'>
-
-  #header {
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  #subsection {
-    display: block;
-    text-align: center;
-  }
-  .group {
-    padding-bottom: 0.5rem;
-  }
-  .entry {
-    display: block;
-    padding: 0.25rem;
-  }
-  #notice {
-    color: red;
-    font-style: italic;
-    font-size: 0.75rem;
-  }
-  .submit {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    text-align: right;
-    border: solid green 1px;
-    border-radius: 0.25rem;
-    background-color: white;
-    color: green;
-    text-decoration: none;
-  }
-  .submit:hover {
-    cursor: pointer;
-    background-color: green;
-    color: white;
-  }
-</style>
-
 <%= form_with url: sign_in_path do |form| %>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :username %>
-    <%= form.text_field :username, class: 'entry' %>
+    <%= form.text_field :username, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :password %>
-    <%= form.password_field :password, class: 'entry' %>
+    <%= form.password_field :password, class: 'form-entry' %>
     <p id='notice'><%= notice %></p>
 
   </div>
-  <%= submit_tag 'Sign In', class: 'submit' %>
+  <%= submit_tag 'Sign In', class: 'btn-hollow' %>
 <% end %>
