@@ -91,7 +91,7 @@ main {
 .hero-text {
   text-wrap: balance;
 }
-.heading {
+.hero-heading {
   color: var(--txt-accent);
   padding-bottom: 1rem;
   text-wrap: balance;
@@ -119,8 +119,8 @@ main {
   background-color: var(--txt-accent);
 }
 .action-btn:hover {
-  background-color: #ce8818;
-  border: solid #ce8818 1px;
+  background-color: #b87a16;
+  border: solid #b87a16 1px;
   color: var(--txt-secondary);
 }
 .info-container {
@@ -130,4 +130,42 @@ main {
   padding-bottom: 1.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.info-heading {
+  color: var(--txt-accent);
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 4rem;
+}
+.info-cards {
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.15rem 0.15rem 0.15rem grey;
+}
+.card-heading {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.card-list>li {
+  list-style: none;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.good {
+  color: rgb(4 120 87 / 1);
+  background-color: rgb(209, 250, 229, 0.7);
+}
+.bad {
+  color: rgb(190 18 60 / 1);
+  background-color: rgb(255, 228, 230, 0.75);
 }

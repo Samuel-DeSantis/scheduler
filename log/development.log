@@ -42583,3 +42583,759 @@ Processing by SessionsController#sign_in as HTML
 Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 4710)
 
 
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:24:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 32.7ms | Allocations: 684)
+  Rendered layouts/_navbar.html.erb (Duration: 25.5ms | Allocations: 591)
+  Rendered layouts/_footer.html.erb (Duration: 8.8ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 973.3ms | Allocations: 60498)
+Completed 200 OK in 1236ms (Views: 1019.9ms | ActiveRecord: 0.0ms | Allocations: 66739)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:25:04 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 6503)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms | Allocations: 6825)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:25:09 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 14.5ms | Allocations: 367)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 3228)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 4317)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:26:16 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 5392)
+Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 5714)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:26:29 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 5904)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 6225)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:26:37 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 6845)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.0ms | Allocations: 7163)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:31:21 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 5846)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.0ms | Allocations: 6164)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:22 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 64.4ms | Allocations: 4027)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 75.0ms | Allocations: 4448)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 82.8ms | Allocations: 6172)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.0ms | Allocations: 6981)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:25 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 2659)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2754)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4405)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4725)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:31:29 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 6800)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 7119)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:30 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.6ms | Allocations: 2655)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2749)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4400)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 4720)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:31 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.6ms | Allocations: 2651)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2745)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4396)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4716)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:32 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.6ms | Allocations: 2643)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2737)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4388)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4708)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:31:36 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 1964)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 2282)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:37 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 5.4ms | Allocations: 2657)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2751)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4409)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4730)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:37 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.8ms | Allocations: 2647)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4392)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4713)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:31:49 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 6333)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.0ms | Allocations: 6651)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:50 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.2ms | Allocations: 2661)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2755)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4406)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 4726)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:50 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.6ms | Allocations: 2653)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2747)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4398)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4718)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:52 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.9ms | Allocations: 2645)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2739)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4390)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4710)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:53 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 2657)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2751)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4402)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4722)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:31:54 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.3ms | Allocations: 2639)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2733)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4384)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 4704)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:32:00 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 6304)
+Completed 200 OK in 61ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 6622)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:32:00 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.4ms | Allocations: 2645)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2739)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4392)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4712)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:32:01 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 2647)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4397)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4717)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:33:39 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 18.6ms | Allocations: 384)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 8139)
+Completed 200 OK in 87ms (Views: 83.8ms | ActiveRecord: 0.0ms | Allocations: 9225)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:33:56 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 5925)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.0ms | Allocations: 6244)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:34:44 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 5900)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 6218)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:34:51 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 6362)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.0ms | Allocations: 6680)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:35:10 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 6362)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms | Allocations: 6680)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:35:43 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 5872)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.0ms | Allocations: 6190)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:36:16 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 5396)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 5714)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:36:42 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 6358)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 6676)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:38:45 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 16.9ms | Allocations: 382)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 73.3ms | Allocations: 7739)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.0ms | Allocations: 8824)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:39:58 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 6862)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.0ms | Allocations: 7181)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:40:28 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 7308)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 7626)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:40:59 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 5954)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms | Allocations: 6272)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:41:41 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 15.7ms | Allocations: 380)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 3232)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 4318)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:41:59 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 6373)
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.0ms | Allocations: 6692)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:42:40 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 17.0ms | Allocations: 400)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 3248)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 4330)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:43:30 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 7325)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 7644)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:43:35 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 5408)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 5726)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:43:48 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 7312)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms | Allocations: 7630)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:45:26 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 5461)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 5779)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:45:32 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.6ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 6361)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.0ms | Allocations: 6679)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:45:38 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 1948)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2266)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:46:14 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 23.1ms | Allocations: 410)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 7223)
+Completed 200 OK in 89ms (Views: 85.6ms | ActiveRecord: 0.0ms | Allocations: 8308)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:46:41 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 20.0ms | Allocations: 408)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 87.2ms | Allocations: 8172)
+Completed 200 OK in 94ms (Views: 91.2ms | ActiveRecord: 0.0ms | Allocations: 9255)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:46:51 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 5918)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 6237)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:47:11 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 77.7ms | Allocations: 5885)
+Completed 200 OK in 84ms (Views: 81.2ms | ActiveRecord: 0.0ms | Allocations: 6203)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:47:18 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | Allocations: 5922)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.0ms | Allocations: 6240)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:47:30 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 6865)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 7183)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:47:37 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 75.4ms | Allocations: 7324)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.0ms | Allocations: 7643)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:48:01 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 6340)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 6658)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:52:14 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 6388)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 6706)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:52:35 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 5415)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 0.0ms | Allocations: 5733)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:53:05 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 22.7ms | Allocations: 437)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 4.5ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 46.5ms | Allocations: 3289)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:53:45 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 22.6ms | Allocations: 434)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 3299)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms | Allocations: 4383)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:53:51 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 17.3ms | Allocations: 434)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 3294)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms | Allocations: 4380)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:54:10 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 21.2ms | Allocations: 434)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 528)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 3288)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 4371)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:55:55 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 6367)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms | Allocations: 6686)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:56:04 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.8ms | Allocations: 3134)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3548)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 83)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5267)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 6051)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:56:06 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.1ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1920)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2241)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:56:07 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 2.2ms | Allocations: 2647)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2741)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4393)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4714)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:56:35 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.5ms | Allocations: 2659)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2753)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4404)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4724)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2024-08-08 20:56:35 -0600
+Processing by SessionsController#sign_in as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/sign_in.html.erb within layouts/application
+  Rendered sessions/_form.html.erb (Duration: 1.7ms | Allocations: 2657)
+  Rendered sessions/sign_in.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2751)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4402)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4722)
+
+
+Started GET "/" for 127.0.0.1 at 2024-08-08 20:56:44 -0600
+Processing by HomeController#welcome as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.2ms | Allocations: 86)
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1926)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2246)
+
+
