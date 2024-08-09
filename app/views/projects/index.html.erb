@@ -1,45 +1,10 @@
-<style>
-  #projects {
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  .project-link {
-    color: inherit;
-    text-decoration: none;
-  }
-  .project-link:hover {
-    text-decoration: underline;
-  }
-  #new-project {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    font-size: 1rem;
-    text-align: right;
-    border: solid green 1px;
-    border-radius: 0.25rem;
-    background-color: white;
-    color: green;
-    text-decoration: none;
-  }
-  #new-project:hover {
-    cursor: pointer;
-    background-color: green;
-    color: white;
-  }
-</style>
-
-<p style="color: green"><%= notice %></p>
-
-<h1>Projects</h1>
-
-<div id="projects">
-  <% @projects.each do |project| %>
-    <%= link_to "#{project.name}", project, class: 'project-link' %>
-  <% end %>
+<div class='projects-container'>
+  <p style="color: green"><%= notice %></p>
+  <h1 class='project-heading'>Projects</h1>
+  <div class="projects">
+    <% @projects.each do |project| %>
+      <%= link_to  "#{project.name}", project, class: 'project-link' %>
+    <% end %>
+  </div>
+  <%= link_to "New project", new_project_path, class: 'btn-hollow' %>
 </div>
-
-<%= link_to "New project", new_project_path, id: 'new-project' %>

@@ -95,38 +95,40 @@
     text-decoration: underline;
   }
 </style>
+<div class="projects-container">
+  <p style="color: green"><%= notice %></p>
+  <div id='header'>
+    <h1 class='project-heading'><%= @project.name %></h1>
+    <%= link_to "Edit", edit_project_path(@project), id: 'edit' %>
+    <%= button_to "Delete", @project, method: :delete, id: 'delete' %>
+  </div>
+  <% if @project.conduits == [] %>
+    <p>There aren't any conduits yet!</p>
+  <% else %>
+    <table>
+      <thead>
+        <th>Tag</th>
+        <th>Size</th>
+        <th>To</th>
+        <th>From</th>
+        <th>No. of Cables</th>
+      </thead>
+      <tbody>
+        <% @project.conduits.each do |conduit| %>
+          <tr id=<%= "row#{conduit.id}" %>>
+            <th><%= conduit.tag %></th>
+            <td><%= conduit.size %></td>
+            <td><%= conduit.to %></td>
+            <td><%= conduit.from %></td>
+            <td class='cable-count'><%= conduit.cables.count %></td>
+            <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
 
-<p style="color: green"><%= notice %></p>
-<div id='header'>
-  <h1><%= @project.name %></h1>
-  <%= link_to "Edit", edit_project_path(@project), id: 'edit' %>
-  <%= button_to "Delete", @project, method: :delete, id: 'delete' %>
+  <%= link_to 'Create a New Conduit', new_project_conduit_path(@project), class: 'btn-hollow' %>
+  <%= link_to "> Back to projects", projects_path, id: 'back' %>
+
 </div>
-<% if @project.conduits == [] %>
-  <p>There aren't any conduits yet!</p>
-<% else %>
-  <table>
-    <thead>
-      <th>Tag</th>
-      <th>Size</th>
-      <th>To</th>
-      <th>From</th>
-      <th>No. of Cables</th>
-    </thead>
-    <tbody>
-      <% @project.conduits.each do |conduit| %>
-        <tr id=<%= "row#{conduit.id}" %>>
-          <th><%= conduit.tag %></th>
-          <td><%= conduit.size %></td>
-          <td><%= conduit.to %></td>
-          <td><%= conduit.from %></td>
-          <td class='cable-count'><%= conduit.cables.count %></td>
-          <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-<% end %>
-
-<%= link_to 'Create a New Conduit', new_project_conduit_path(@project), class: 'create' %>
-<%= link_to "> Back to projects", projects_path, id: 'back' %>

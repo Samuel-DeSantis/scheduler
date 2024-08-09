@@ -13,6 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+/*-----------------------------------------
+*               -Contents-
+* -----------------------------------------
+* => General
+* => Text Sizing Defaults: [sm, md, lg, xl]
+* => Navigation
+* => Buttons: [btn-hollow, btn-solid]
+* => Links: [link, link-back]
+* => Home Page
+*    => Hero
+*    => Info
+* => Forms
+* => Projects
+* ---------------------------------------*/
+
+/* General */
 * {
   padding: 0;
   margin: 0;
@@ -28,10 +45,16 @@ body {
   --bg-secondary: #023047;
   --bg-accent: #905e0c;
 }
+main {
+  padding-top: 10rem;
+}
+/* Text Sizing Defaults */
 .sm {font-size: 0.75rem;}
 .md {font-size: 1rem;}
 .lg {font-size: 1.5rem;}
 .xl {font-size: 2rem;}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,6 +67,7 @@ nav {
   color: var(--txt-accent);
   text-decoration: none;
 }
+/* Buttons */
 .btn-hollow {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -61,6 +85,21 @@ nav {
   background-color: var(--txt-accent);
   color: var(--txt-secondary);
 }
+.btn-solid {
+  padding: 1rem;
+  border: solid var(--bg-accent) 1px;
+  border-radius: 0.25rem;
+  color: var(--txt-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--txt-accent);
+}
+.btn-solid:hover {
+  background-color: #b87a16;
+  border: solid #b87a16 1px;
+  color: var(--txt-secondary);
+}
+/* Links */
 .links {
   margin-right: 1rem;
   /* color: var(--primary-txt-light); */
@@ -81,9 +120,7 @@ nav {
 .link-back:hover {
   text-decoration: underline;
 }
-main {
-  padding-top: 10rem;
-}
+/* Home Page */
 .hero-container {
   display: flex;
   justify-content: center;
@@ -119,20 +156,6 @@ main {
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0.15rem 0.15rem 0.15rem grey;
-}
-.btn-solid {
-  padding: 1rem;
-  border: solid var(--bg-accent) 1px;
-  border-radius: 0.25rem;
-  color: var(--txt-secondary);
-  text-decoration: none;
-  font-weight: 600;
-  background-color: var(--txt-accent);
-}
-.btn-solid:hover {
-  background-color: #b87a16;
-  border: solid #b87a16 1px;
-  color: var(--txt-secondary);
 }
 .info-container {
   padding-top: 15rem;
@@ -180,6 +203,7 @@ main {
   color: rgb(190 18 60 / 1);
   background-color: rgb(255, 228, 230, 0.75);
 }
+/* Forms */
 .form-container {
   display: flex;
   padding-top: 10rem;
@@ -204,4 +228,28 @@ main {
 .form-entry {
   display: block;
   padding: 0.25rem;
+}
+/* Projects */
+.projects-container {
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.project-heading {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: var(--txt-accent);
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+.project-link {
+  padding-bottom: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+.project-link:hover {
+  text-decoration: underline;
 }
