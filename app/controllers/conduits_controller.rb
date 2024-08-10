@@ -19,7 +19,7 @@ class ConduitsController < ApplicationController
 
   # GET /conduits/1/edit
   def edit
-    @projects = Project.all
+    # @projects = Project.all
   end
 
   # POST /conduits or /conduits.json

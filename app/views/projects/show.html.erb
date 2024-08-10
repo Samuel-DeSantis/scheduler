@@ -86,14 +86,6 @@
   .cable-count {
     text-align: center;
   }
-  #back {
-    color: black;
-    font-style: italic;
-    text-decoration: none;
-  }
-  #back:hover {
-    text-decoration: underline;
-  }
 </style>
 <div class="projects-container">
   <p style="color: green"><%= notice %></p>
@@ -121,7 +113,7 @@
             <td><%= conduit.to %></td>
             <td><%= conduit.from %></td>
             <td class='cable-count'><%= conduit.cables.count %></td>
-            <td class='cable-count'><%= link_to 'Update', edit_conduit_path(conduit), class: 'update' %></td>
+            <td class='cable-count'><%= link_to 'Update', edit_project_conduit_path(@project, conduit), class: 'btn-update' %></td>
           </tr>
         <% end %>
       </tbody>
@@ -129,6 +121,6 @@
   <% end %>
 
   <%= link_to 'Create a New Conduit', new_project_conduit_path(@project), class: 'btn-hollow' %>
-  <%= link_to "> Back to projects", projects_path, id: 'back' %>
+  <%= link_to "Back to projects", projects_path, class: 'link-back' %>
 
 </div>

@@ -1,33 +1,3 @@
-<style type='text/css'>
-  .group {
-    padding-bottom: 0.5rem;
-  }
-  .entry {
-    display: block;
-    padding: 0.25rem;
-  }
-  .submit {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    text-align: right;
-    border: solid green 1px;
-    border-radius: 0.25rem;
-    background-color: white;
-    color: green;
-    text-decoration: none;
-  }
-  .submit:hover {
-    cursor: pointer;
-    background-color: green;
-    color: white;
-  }
-</style>
-
-<%= @project.id %>
-
 <%= form_with(model: conduit) do |form| %>
   <% if conduit.errors.any? %>
     <div style="color: red">
@@ -40,27 +10,27 @@
       </ul>
     </div>
   <% end %>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :tag %>
-    <%= form.text_field :tag, class: 'entry' %>
+    <%= form.text_field :tag, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :size %>
-    <%= form.text_field :size, class: 'entry' %>
+    <%= form.text_field :size, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :to %>
-    <%= form.text_field :to, class: 'entry' %>
+    <%= form.text_field :to, class: 'form-entry' %>
   </div>
-  <div class='group'>
+  <div class='form-group'>
     <%= form.label :from %>
-    <%= form.text_field :from, class: 'entry' %>
+    <%= form.text_field :from, class: 'form-entry' %>
   </div>
-  <div class='group' hidden>
+  <div class='form-group' hidden>
     <%= form.label :project_id %>
-    <%= form.number_field :project_id, value: @project.id, class: 'entry' %>
+    <%= form.number_field :project_id, value: @project.id, class: 'form-entry' %>
   </div> 
   <div>
-    <%= form.submit class: 'submit' %>
+    <%= form.submit class: 'btn-hollow' %>
   </div>
 <% end %>
