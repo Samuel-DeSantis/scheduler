@@ -27,6 +27,7 @@
 *    => Info
 * => Forms
 * => Projects
+* => Tables
 * ---------------------------------------*/
 
 /* General */
@@ -286,4 +287,27 @@ nav {
 }
 .project-link:hover {
   text-decoration: underline;
+}
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 75%;
+  margin-bottom: 1.5rem;
+}
+thead {
+  background-color: var(--bg-accent);
+  color: var(--txt-secondary)
+}
+tr:hover {
+  background-color: rgb(221 221 221 / 0.5);
+}
+th, td {
+  text-align: center;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border-bottom: 1px solid rgb(221, 221, 221)
 }

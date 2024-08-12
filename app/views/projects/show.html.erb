@@ -74,15 +74,6 @@
     background-color: green;
     color: white;
   }
-  table {
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-  }
-  th, td {
-    padding: 0.5rem;
-  }
   .cable-count {
     text-align: center;
   }
@@ -99,11 +90,14 @@
   <% else %>
     <table>
       <thead>
-        <th>Tag</th>
-        <th>Size</th>
-        <th>To</th>
-        <th>From</th>
-        <th>No. of Cables</th>
+        <tr class='trhead'>
+          <th>Tag</th>
+          <th>Size</th>
+          <th>To</th>
+          <th>From</th>
+          <th>No. of Cables</th>
+          <th></th>
+        </tr>
       </thead>
       <tbody>
         <% @project.conduits.each do |conduit| %>

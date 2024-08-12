@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[ show edit update destroy ]
   before_action :require_login, except: [:sign_up]
+  before_action :protect_user_paths
 
   # GET /users or /users.json
   def index
@@ -65,6 +66,12 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+    end
+
+    def protect_user_paths
+      if @user.id != session[:user_id]
+        redirect_to projects_path
+      end
     end
 
     # Only allow a list of trusted parameters through.
