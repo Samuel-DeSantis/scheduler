@@ -2,6 +2,7 @@ class ConduitsController < ApplicationController
   before_action :set_conduit, only: [ :show, :edit, :update, :destroy ]
   before_action :set_project, only: [ :new, :create, :show, :edit, :update, :destroy ]
   before_action :require_login
+  # before_action :protect_conduit_paths
 
   # GET /conduits or /conduits.json
   def index
@@ -70,6 +71,12 @@ class ConduitsController < ApplicationController
     def set_project
       @project = Project.find_by_id(params[:project_id])
     end
+
+    # def protect_conduit_paths
+    #   unless User.find_by_id(session[:user_id]).projects.include? @project
+    #     redirect_to projects_path
+    #   end
+    # end
 
     # Only allow a list of trusted parameters through.
     def conduit_params

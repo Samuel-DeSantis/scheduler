@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: %i[ show edit update destroy ]
   before_action :require_login
+  before_action :protect_project_paths, except: [:index]
 
   # GET /projects or /projects.json
   def index
@@ -65,6 +66,12 @@ class ProjectsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_project
       @project = Project.find(params[:id])
+    end
+
+    def protect_project_paths
+      unless User.find_by_id(session[:user_id]).projects.include? @project
+        redirect_to projects_path
+      end
     end
 
     # Only allow a list of trusted parameters through.

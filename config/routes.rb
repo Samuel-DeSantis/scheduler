@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   # root "articles#index"
 
 
-  resources :cables
+  # resources :cables
   resources :conduits do
     resources :cables
   end
   resources :projects do
-    resources :conduits
+    resources :conduits do
+      resources :cables
+    end
   end
   resources :users, only: [:show, :edit, :create, :destroy]
 
